@@ -26,6 +26,8 @@ import java.util.concurrent.{CompletableFuture, Executor}
 
 // hypervolt.TestKinesisPut.apply()
 object TestKinesisPut {
+  def main(args: Array[String]): Unit = apply()
+
   def apply(): Unit = {
     val kinesisClient: KinesisAsyncClient = makeClient()
 

@@ -10,7 +10,8 @@ lazy val Versions = new {
   val auth0JwksRsa = "0.11.0"
   val awssdk = "1.11.728" // matches kinesis adaptor
   //    val awssdk = "1.12.528"
-  val awssdk2 = "2.15.14" // 2.14.x series lacks waiter classes
+//  val awssdk2 = "2.15.14" // 2.14.x series lacks waiter classes
+  val awssdk2 = "2.20.125" // 2.14.x series lacks waiter classes
   val bouncyCastle = "1.67"
   val caffeine = "3.0.2"
   val chimney = "0.7.5"
@@ -141,18 +142,23 @@ lazy val hvDomain = (project in file("libs/hv-domain"))
     CustomMergeStrat.mergeStrat,
 //    assemblyShadeRules in assembly ++= Seq(
 //      ShadeRule.rename("io.netty.**" -> "aws_version_of_netty.@1")
-//        .inLibrary("com.amazonaws" % "aws-java-sdk-kinesis" % Versions.awssdk)
-//        .inProject
+//        .inLibrary("com.amazonaws" % "aws-java-sdk-kinesis" % Versions.awssdk),
+//      ShadeRule.rename("io.netty.**" -> "aws2_version_of_netty.@1")
+//        .inLibrary("software.amazon.awssdk" % "kinesis" % Versions.awssdk2)
+////        .inProject
 //    ),
     moduleName := "hv-domain",
     libraryDependencies ++= Seq(
-      "com.amazonaws" % "aws-java-sdk-kinesis" % Versions.awssdk,
+//      "com.amazonaws" % "aws-java-sdk-kinesis" % Versions.awssdk,
       "software.amazon.awssdk" % "kinesis" % Versions.awssdk2,
-
-
       "com.twitter"        %% "util-core"        % Versions.twitter,
-//      "io.netty"            % "netty-buffer"     % Versions.netty,
       "com.lihaoyi"        %% "upickle"          % "1.6.0",
+
+      // This is OK:
+//            "io.netty"            % "netty-buffer"     % "4.1.46.Final",
+      // This breaks it, creates weird exception
+            "io.netty"            % "netty-buffer"     % Versions.netty,
+
 //      "io.circe"           %% "circe-core"       % Versions.circe,
 //      "io.circe"           %% "circe-generic"    % Versions.circe,
 //      "io.circe"           %% "circe-parser"     % Versions.circe,
