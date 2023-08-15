@@ -1,0 +1,1952 @@
+[info] welcome to sbt 1.8.2 (AdoptOpenJDK Java 11.0.11)
+[info] loading global plugins from /Users/sam/.sbt/1.0/plugins
+[info] loading settings for project hv-be-reconstructed-build from plugins.sbt ...
+[info] loading project definition from /Users/sam/src/hypervolt-repos/hv-be-reconstructed/project
+[info] loading settings for project hypervolt from build.sbt ...
+[info] set current project to hypervolt (in build file:/Users/sam/src/hypervolt-repos/hv-be-reconstructed/)
+[info] hypervolt:hypervolt_2.13:0.1.0-SNAPSHOT [S]
+[info] hvdomain:hv-domain_2.13:0.1.0-SNAPSHOT [S]
+[info]   +-com.lihaoyi:upickle_2.13:1.6.0 [S]
+[info]   | +-com.lihaoyi:ujson_2.13:1.6.0 [S]
+[info]   | | +-com.lihaoyi:upickle-core_2.13:1.6.0 [S]
+[info]   | |   +-com.lihaoyi:geny_2.13:0.7.1 [S]
+[info]   | |   
+[info]   | +-com.lihaoyi:upack_2.13:1.6.0 [S]
+[info]   | | +-com.lihaoyi:upickle-core_2.13:1.6.0 [S]
+[info]   | |   +-com.lihaoyi:geny_2.13:0.7.1 [S]
+[info]   | |   
+[info]   | +-com.lihaoyi:upickle-implicits_2.13:1.6.0 [S]
+[info]   |   +-com.lihaoyi:upickle-core_2.13:1.6.0 [S]
+[info]   |     +-com.lihaoyi:geny_2.13:0.7.1 [S]
+[info]   |     
+[info]   +-com.twitter:util-core_2.13:20.9.0 [S]
+[info]   | +-com.twitter:util-function_2.13:20.9.0 [S]
+[info]   | | +-org.scala-lang.modules:scala-collection-compat_2.13:2.1.2 [S]
+[info]   | | 
+[info]   | +-org.scala-lang.modules:scala-collection-compat_2.13:2.1.2 [S]
+[info]   | +-org.scala-lang.modules:scala-parser-combinators_2.13:1.1.2 [S]
+[info]   | +-org.scala-lang:scala-reflect:2.13.8 [S]
+[info]   | 
+[info]   +-io.netty:netty-buffer:4.1.46.Final
+[info]   | +-io.netty:netty-common:4.1.46.Final
+[info]   | 
+[info]   +-software.amazon.awssdk:kinesis:2.15.14
+[info]     +-software.amazon.awssdk:annotations:2.15.14
+[info]     +-software.amazon.awssdk:apache-client:2.15.14
+[info]     | +-org.apache.httpcomponents:httpclient:4.5.9
+[info]     | | +-commons-codec:commons-codec:1.11
+[info]     | | +-commons-logging:commons-logging:1.2
+[info]     | | +-org.apache.httpcomponents:httpcore:4.4.11
+[info]     | | 
+[info]     | +-org.apache.httpcomponents:httpcore:4.4.11
+[info]     | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | +-software.amazon.awssdk:http-client-spi:2.15.14
+[info]     | | +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | +-software.amazon.awssdk:metrics-spi:2.15.14
+[info]     | | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | +-software.amazon.awssdk:utils:2.15.14
+[info]     | | |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | |   +-org.slf4j:slf4j-api:1.7.28
+[info]     | | |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | |   
+[info]     | | +-software.amazon.awssdk:utils:2.15.14
+[info]     | |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | |   +-org.slf4j:slf4j-api:1.7.28
+[info]     | |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     | |   
+[info]     | +-software.amazon.awssdk:metrics-spi:2.15.14
+[info]     | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | +-software.amazon.awssdk:utils:2.15.14
+[info]     | |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | |   +-org.slf4j:slf4j-api:1.7.28
+[info]     | |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     | |   
+[info]     | +-software.amazon.awssdk:utils:2.15.14
+[info]     |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     |   +-org.slf4j:slf4j-api:1.7.28
+[info]     |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     |   
+[info]     +-software.amazon.awssdk:auth:2.15.14
+[info]     | +-com.fasterxml.jackson.core:jackson-databind:2.10.4
+[info]     | | +-com.fasterxml.jackson.core:jackson-annotations:2.10.4
+[info]     | | +-com.fasterxml.jackson.core:jackson-core:2.10.4
+[info]     | | 
+[info]     | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | +-software.amazon.awssdk:http-client-spi:2.15.14
+[info]     | | +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | +-software.amazon.awssdk:metrics-spi:2.15.14
+[info]     | | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | +-software.amazon.awssdk:utils:2.15.14
+[info]     | | |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | |   +-org.slf4j:slf4j-api:1.7.28
+[info]     | | |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | |   
+[info]     | | +-software.amazon.awssdk:utils:2.15.14
+[info]     | |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | |   +-org.slf4j:slf4j-api:1.7.28
+[info]     | |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     | |   
+[info]     | +-software.amazon.awssdk:profiles:2.15.14
+[info]     | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | +-software.amazon.awssdk:utils:2.15.14
+[info]     | |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | |   +-org.slf4j:slf4j-api:1.7.28
+[info]     | |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     | |   
+[info]     | +-software.amazon.awssdk:regions:2.15.14
+[info]     | | +-com.fasterxml.jackson.core:jackson-annotations:2.10.4
+[info]     | | +-com.fasterxml.jackson.core:jackson-databind:2.10.4
+[info]     | | | +-com.fasterxml.jackson.core:jackson-annotations:2.10.4
+[info]     | | | +-com.fasterxml.jackson.core:jackson-core:2.10.4
+[info]     | | | 
+[info]     | | +-org.slf4j:slf4j-api:1.7.28
+[info]     | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | +-software.amazon.awssdk:profiles:2.15.14
+[info]     | | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | +-software.amazon.awssdk:utils:2.15.14
+[info]     | | |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | |   +-org.slf4j:slf4j-api:1.7.28
+[info]     | | |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | |   
+[info]     | | +-software.amazon.awssdk:sdk-core:2.15.14
+[info]     | | | +-com.fasterxml.jackson.core:jackson-core:2.10.4
+[info]     | | | +-com.fasterxml.jackson.core:jackson-databind:2.10.4
+[info]     | | | | +-com.fasterxml.jackson.core:jackson-annotations:2.10.4
+[info]     | | | | +-com.fasterxml.jackson.core:jackson-core:2.10.4
+[info]     | | | | 
+[info]     | | | +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | | +-org.slf4j:slf4j-api:1.7.28
+[info]     | | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | +-software.amazon.awssdk:http-client-spi:2.15.14
+[info]     | | | | +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | | +-software.amazon.awssdk:metrics-spi:2.15.14
+[info]     | | | | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | | | +-software.amazon.awssdk:utils:2.15.14
+[info]     | | | | |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | | | |   +-org.slf4j:slf4j-api:1.7.28
+[info]     | | | | |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | | |   
+[info]     | | | | +-software.amazon.awssdk:utils:2.15.14
+[info]     | | | |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | | |   +-org.slf4j:slf4j-api:1.7.28
+[info]     | | | |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | |   
+[info]     | | | +-software.amazon.awssdk:metrics-spi:2.15.14
+[info]     | | | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | | +-software.amazon.awssdk:utils:2.15.14
+[info]     | | | |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | | |   +-org.slf4j:slf4j-api:1.7.28
+[info]     | | | |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | |   
+[info]     | | | +-software.amazon.awssdk:profiles:2.15.14
+[info]     | | | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | | +-software.amazon.awssdk:utils:2.15.14
+[info]     | | | |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | | |   +-org.slf4j:slf4j-api:1.7.28
+[info]     | | | |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | |   
+[info]     | | | +-software.amazon.awssdk:utils:2.15.14
+[info]     | | |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | |   +-org.slf4j:slf4j-api:1.7.28
+[info]     | | |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | |   
+[info]     | | +-software.amazon.awssdk:utils:2.15.14
+[info]     | |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | |   +-org.slf4j:slf4j-api:1.7.28
+[info]     | |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     | |   
+[info]     | +-software.amazon.awssdk:sdk-core:2.15.14
+[info]     | | +-com.fasterxml.jackson.core:jackson-core:2.10.4
+[info]     | | +-com.fasterxml.jackson.core:jackson-databind:2.10.4
+[info]     | | | +-com.fasterxml.jackson.core:jackson-annotations:2.10.4
+[info]     | | | +-com.fasterxml.jackson.core:jackson-core:2.10.4
+[info]     | | | 
+[info]     | | +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | +-org.slf4j:slf4j-api:1.7.28
+[info]     | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | +-software.amazon.awssdk:http-client-spi:2.15.14
+[info]     | | | +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | +-software.amazon.awssdk:metrics-spi:2.15.14
+[info]     | | | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | | +-software.amazon.awssdk:utils:2.15.14
+[info]     | | | |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | | |   +-org.slf4j:slf4j-api:1.7.28
+[info]     | | | |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | |   
+[info]     | | | +-software.amazon.awssdk:utils:2.15.14
+[info]     | | |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | |   +-org.slf4j:slf4j-api:1.7.28
+[info]     | | |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | |   
+[info]     | | +-software.amazon.awssdk:metrics-spi:2.15.14
+[info]     | | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | +-software.amazon.awssdk:utils:2.15.14
+[info]     | | |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | |   +-org.slf4j:slf4j-api:1.7.28
+[info]     | | |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | |   
+[info]     | | +-software.amazon.awssdk:profiles:2.15.14
+[info]     | | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | +-software.amazon.awssdk:utils:2.15.14
+[info]     | | |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | |   +-org.slf4j:slf4j-api:1.7.28
+[info]     | | |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | |   
+[info]     | | +-software.amazon.awssdk:utils:2.15.14
+[info]     | |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | |   +-org.slf4j:slf4j-api:1.7.28
+[info]     | |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     | |   
+[info]     | +-software.amazon.awssdk:utils:2.15.14
+[info]     | | +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | +-org.slf4j:slf4j-api:1.7.28
+[info]     | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | 
+[info]     | +-software.amazon.eventstream:eventstream:1.0.1
+[info]     | 
+[info]     +-software.amazon.awssdk:aws-cbor-protocol:2.15.14
+[info]     | +-com.fasterxml.jackson.core:jackson-core:2.10.4
+[info]     | +-com.fasterxml.jackson.dataformat:jackson-dataformat-cbor:2.10.4
+[info]     | | +-com.fasterxml.jackson.core:jackson-core:2.10.4
+[info]     | | 
+[info]     | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | +-software.amazon.awssdk:aws-json-protocol:2.15.14
+[info]     | | +-com.fasterxml.jackson.core:jackson-core:2.10.4
+[info]     | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | +-software.amazon.awssdk:aws-core:2.15.14
+[info]     | | | +-org.slf4j:slf4j-api:1.7.28
+[info]     | | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | +-software.amazon.awssdk:auth:2.15.14
+[info]     | | | | +-com.fasterxml.jackson.core:jackson-databind:2.10.4
+[info]     | | | | | +-com.fasterxml.jackson.core:jackson-annotations:2.10.4
+[info]     | | | | | +-com.fasterxml.jackson.core:jackson-core:2.10.4
+[info]     | | | | | 
+[info]     | | | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | | +-software.amazon.awssdk:http-client-spi:2.15.14
+[info]     | | | | | +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | | | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | | | +-software.amazon.awssdk:metrics-spi:2.15.14
+[info]     | | | | | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | | | | +-software.amazon.awssdk:utils:2.15.14
+[info]     | | | | | |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | | | | |   +-org.slf4j:slf4j-api:1.7.28
+[info]     | | | | | |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | | | |   
+[info]     | | | | | +-software.amazon.awssdk:utils:2.15.14
+[info]     | | | | |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | | | |   +-org.slf4j:slf4j-api:1.7.28
+[info]     | | | | |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | | |   
+[info]     | | | | +-software.amazon.awssdk:profiles:2.15.14
+[info]     | | | | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | | | +-software.amazon.awssdk:utils:2.15.14
+[info]     | | | | |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | | | |   +-org.slf4j:slf4j-api:1.7.28
+[info]     | | | | |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | | |   
+[info]     | | | | +-software.amazon.awssdk:regions:2.15.14
+[info]     | | | | | +-com.fasterxml.jackson.core:jackson-annotations:2.10.4
+[info]     | | | | | +-com.fasterxml.jackson.core:jackson-databind:2.10.4
+[info]     | | | | | | +-com.fasterxml.jackson.core:jackson-annotations:2.10.4
+[info]     | | | | | | +-com.fasterxml.jackson.core:jackson-core:2.10.4
+[info]     | | | | | | 
+[info]     | | | | | +-org.slf4j:slf4j-api:1.7.28
+[info]     | | | | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | | | +-software.amazon.awssdk:profiles:2.15.14
+[info]     | | | | | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | | | | +-software.amazon.awssdk:utils:2.15.14
+[info]     | | | | | |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | | | | |   +-org.slf4j:slf4j-api:1.7.28
+[info]     | | | | | |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | | | |   
+[info]     | | | | | +-software.amazon.awssdk:sdk-core:2.15.14
+[info]     | | | | | | +-com.fasterxml.jackson.core:jackson-core:2.10.4
+[info]     | | | | | | +-com.fasterxml.jackson.core:jackson-databind:2.10.4
+[info]     | | | | | | | +-com.fasterxml.jackson.core:jackson-annotations:2.10.4
+[info]     | | | | | | | +-com.fasterxml.jackson.core:jackson-core:2.10.4
+[info]     | | | | | | | 
+[info]     | | | | | | +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | | | | | +-org.slf4j:slf4j-api:1.7.28
+[info]     | | | | | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | | | | +-software.amazon.awssdk:http-client-spi:2.15.14
+[info]     | | | | | | | +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | | | | | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | | | | | +-software.amazon.awssdk:metrics-spi:2.15.14
+[info]     | | | | | | | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | | | | | | +-software.amazon.awssdk:utils:2.15.14
+[info]     | | | | | | | |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | | | | | | |   +-org.slf4j:slf4j-api:1.7.28
+[info]     | | | | | | | |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | | | | | |   
+[info]     | | | | | | | +-software.amazon.awssdk:utils:2.15.14
+[info]     | | | | | | |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | | | | | |   +-org.slf4j:slf4j-api:1.7.28
+[info]     | | | | | | |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | | | | |   
+[info]     | | | | | | +-software.amazon.awssdk:metrics-spi:2.15.14
+[info]     | | | | | | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | | | | | +-software.amazon.awssdk:utils:2.15.14
+[info]     | | | | | | |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | | | | | |   +-org.slf4j:slf4j-api:1.7.28
+[info]     | | | | | | |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | | | | |   
+[info]     | | | | | | +-software.amazon.awssdk:profiles:2.15.14
+[info]     | | | | | | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | | | | | +-software.amazon.awssdk:utils:2.15.14
+[info]     | | | | | | |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | | | | | |   +-org.slf4j:slf4j-api:1.7.28
+[info]     | | | | | | |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | | | | |   
+[info]     | | | | | | +-software.amazon.awssdk:utils:2.15.14
+[info]     | | | | | |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | | | | |   +-org.slf4j:slf4j-api:1.7.28
+[info]     | | | | | |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | | | |   
+[info]     | | | | | +-software.amazon.awssdk:utils:2.15.14
+[info]     | | | | |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | | | |   +-org.slf4j:slf4j-api:1.7.28
+[info]     | | | | |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | | |   
+[info]     | | | | +-software.amazon.awssdk:sdk-core:2.15.14
+[info]     | | | | | +-com.fasterxml.jackson.core:jackson-core:2.10.4
+[info]     | | | | | +-com.fasterxml.jackson.core:jackson-databind:2.10.4
+[info]     | | | | | | +-com.fasterxml.jackson.core:jackson-annotations:2.10.4
+[info]     | | | | | | +-com.fasterxml.jackson.core:jackson-core:2.10.4
+[info]     | | | | | | 
+[info]     | | | | | +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | | | | +-org.slf4j:slf4j-api:1.7.28
+[info]     | | | | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | | | +-software.amazon.awssdk:http-client-spi:2.15.14
+[info]     | | | | | | +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | | | | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | | | | +-software.amazon.awssdk:metrics-spi:2.15.14
+[info]     | | | | | | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | | | | | +-software.amazon.awssdk:utils:2.15.14
+[info]     | | | | | | |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | | | | | |   +-org.slf4j:slf4j-api:1.7.28
+[info]     | | | | | | |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | | | | |   
+[info]     | | | | | | +-software.amazon.awssdk:utils:2.15.14
+[info]     | | | | | |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | | | | |   +-org.slf4j:slf4j-api:1.7.28
+[info]     | | | | | |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | | | |   
+[info]     | | | | | +-software.amazon.awssdk:metrics-spi:2.15.14
+[info]     | | | | | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | | | | +-software.amazon.awssdk:utils:2.15.14
+[info]     | | | | | |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | | | | |   +-org.slf4j:slf4j-api:1.7.28
+[info]     | | | | | |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | | | |   
+[info]     | | | | | +-software.amazon.awssdk:profiles:2.15.14
+[info]     | | | | | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | | | | +-software.amazon.awssdk:utils:2.15.14
+[info]     | | | | | |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | | | | |   +-org.slf4j:slf4j-api:1.7.28
+[info]     | | | | | |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | | | |   
+[info]     | | | | | +-software.amazon.awssdk:utils:2.15.14
+[info]     | | | | |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | | | |   +-org.slf4j:slf4j-api:1.7.28
+[info]     | | | | |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | | |   
+[info]     | | | | +-software.amazon.awssdk:utils:2.15.14
+[info]     | | | | | +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | | | | +-org.slf4j:slf4j-api:1.7.28
+[info]     | | | | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | | | 
+[info]     | | | | +-software.amazon.eventstream:eventstream:1.0.1
+[info]     | | | | 
+[info]     | | | +-software.amazon.awssdk:http-client-spi:2.15.14
+[info]     | | | | +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | | +-software.amazon.awssdk:metrics-spi:2.15.14
+[info]     | | | | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | | | +-software.amazon.awssdk:utils:2.15.14
+[info]     | | | | |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | | | |   +-org.slf4j:slf4j-api:1.7.28
+[info]     | | | | |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | | |   
+[info]     | | | | +-software.amazon.awssdk:utils:2.15.14
+[info]     | | | |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | | |   +-org.slf4j:slf4j-api:1.7.28
+[info]     | | | |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | |   
+[info]     | | | +-software.amazon.awssdk:metrics-spi:2.15.14
+[info]     | | | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | | +-software.amazon.awssdk:utils:2.15.14
+[info]     | | | |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | | |   +-org.slf4j:slf4j-api:1.7.28
+[info]     | | | |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | |   
+[info]     | | | +-software.amazon.awssdk:profiles:2.15.14
+[info]     | | | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | | +-software.amazon.awssdk:utils:2.15.14
+[info]     | | | |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | | |   +-org.slf4j:slf4j-api:1.7.28
+[info]     | | | |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | |   
+[info]     | | | +-software.amazon.awssdk:regions:2.15.14
+[info]     | | | | +-com.fasterxml.jackson.core:jackson-annotations:2.10.4
+[info]     | | | | +-com.fasterxml.jackson.core:jackson-databind:2.10.4
+[info]     | | | | | +-com.fasterxml.jackson.core:jackson-annotations:2.10.4
+[info]     | | | | | +-com.fasterxml.jackson.core:jackson-core:2.10.4
+[info]     | | | | | 
+[info]     | | | | +-org.slf4j:slf4j-api:1.7.28
+[info]     | | | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | | +-software.amazon.awssdk:profiles:2.15.14
+[info]     | | | | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | | | +-software.amazon.awssdk:utils:2.15.14
+[info]     | | | | |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | | | |   +-org.slf4j:slf4j-api:1.7.28
+[info]     | | | | |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | | |   
+[info]     | | | | +-software.amazon.awssdk:sdk-core:2.15.14
+[info]     | | | | | +-com.fasterxml.jackson.core:jackson-core:2.10.4
+[info]     | | | | | +-com.fasterxml.jackson.core:jackson-databind:2.10.4
+[info]     | | | | | | +-com.fasterxml.jackson.core:jackson-annotations:2.10.4
+[info]     | | | | | | +-com.fasterxml.jackson.core:jackson-core:2.10.4
+[info]     | | | | | | 
+[info]     | | | | | +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | | | | +-org.slf4j:slf4j-api:1.7.28
+[info]     | | | | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | | | +-software.amazon.awssdk:http-client-spi:2.15.14
+[info]     | | | | | | +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | | | | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | | | | +-software.amazon.awssdk:metrics-spi:2.15.14
+[info]     | | | | | | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | | | | | +-software.amazon.awssdk:utils:2.15.14
+[info]     | | | | | | |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | | | | | |   +-org.slf4j:slf4j-api:1.7.28
+[info]     | | | | | | |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | | | | |   
+[info]     | | | | | | +-software.amazon.awssdk:utils:2.15.14
+[info]     | | | | | |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | | | | |   +-org.slf4j:slf4j-api:1.7.28
+[info]     | | | | | |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | | | |   
+[info]     | | | | | +-software.amazon.awssdk:metrics-spi:2.15.14
+[info]     | | | | | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | | | | +-software.amazon.awssdk:utils:2.15.14
+[info]     | | | | | |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | | | | |   +-org.slf4j:slf4j-api:1.7.28
+[info]     | | | | | |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | | | |   
+[info]     | | | | | +-software.amazon.awssdk:profiles:2.15.14
+[info]     | | | | | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | | | | +-software.amazon.awssdk:utils:2.15.14
+[info]     | | | | | |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | | | | |   +-org.slf4j:slf4j-api:1.7.28
+[info]     | | | | | |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | | | |   
+[info]     | | | | | +-software.amazon.awssdk:utils:2.15.14
+[info]     | | | | |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | | | |   +-org.slf4j:slf4j-api:1.7.28
+[info]     | | | | |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | | |   
+[info]     | | | | +-software.amazon.awssdk:utils:2.15.14
+[info]     | | | |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | | |   +-org.slf4j:slf4j-api:1.7.28
+[info]     | | | |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | |   
+[info]     | | | +-software.amazon.awssdk:sdk-core:2.15.14
+[info]     | | | | +-com.fasterxml.jackson.core:jackson-core:2.10.4
+[info]     | | | | +-com.fasterxml.jackson.core:jackson-databind:2.10.4
+[info]     | | | | | +-com.fasterxml.jackson.core:jackson-annotations:2.10.4
+[info]     | | | | | +-com.fasterxml.jackson.core:jackson-core:2.10.4
+[info]     | | | | | 
+[info]     | | | | +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | | | +-org.slf4j:slf4j-api:1.7.28
+[info]     | | | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | | +-software.amazon.awssdk:http-client-spi:2.15.14
+[info]     | | | | | +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | | | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | | | +-software.amazon.awssdk:metrics-spi:2.15.14
+[info]     | | | | | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | | | | +-software.amazon.awssdk:utils:2.15.14
+[info]     | | | | | |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | | | | |   +-org.slf4j:slf4j-api:1.7.28
+[info]     | | | | | |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | | | |   
+[info]     | | | | | +-software.amazon.awssdk:utils:2.15.14
+[info]     | | | | |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | | | |   +-org.slf4j:slf4j-api:1.7.28
+[info]     | | | | |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | | |   
+[info]     | | | | +-software.amazon.awssdk:metrics-spi:2.15.14
+[info]     | | | | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | | | +-software.amazon.awssdk:utils:2.15.14
+[info]     | | | | |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | | | |   +-org.slf4j:slf4j-api:1.7.28
+[info]     | | | | |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | | |   
+[info]     | | | | +-software.amazon.awssdk:profiles:2.15.14
+[info]     | | | | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | | | +-software.amazon.awssdk:utils:2.15.14
+[info]     | | | | |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | | | |   +-org.slf4j:slf4j-api:1.7.28
+[info]     | | | | |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | | |   
+[info]     | | | | +-software.amazon.awssdk:utils:2.15.14
+[info]     | | | |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | | |   +-org.slf4j:slf4j-api:1.7.28
+[info]     | | | |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | |   
+[info]     | | | +-software.amazon.awssdk:utils:2.15.14
+[info]     | | | | +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | | | +-org.slf4j:slf4j-api:1.7.28
+[info]     | | | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | | 
+[info]     | | | +-software.amazon.eventstream:eventstream:1.0.1
+[info]     | | | 
+[info]     | | +-software.amazon.awssdk:http-client-spi:2.15.14
+[info]     | | | +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | +-software.amazon.awssdk:metrics-spi:2.15.14
+[info]     | | | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | | +-software.amazon.awssdk:utils:2.15.14
+[info]     | | | |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | | |   +-org.slf4j:slf4j-api:1.7.28
+[info]     | | | |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | |   
+[info]     | | | +-software.amazon.awssdk:utils:2.15.14
+[info]     | | |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | |   +-org.slf4j:slf4j-api:1.7.28
+[info]     | | |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | |   
+[info]     | | +-software.amazon.awssdk:protocol-core:2.15.14
+[info]     | | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | +-software.amazon.awssdk:http-client-spi:2.15.14
+[info]     | | | | +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | | +-software.amazon.awssdk:metrics-spi:2.15.14
+[info]     | | | | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | | | +-software.amazon.awssdk:utils:2.15.14
+[info]     | | | | |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | | | |   +-org.slf4j:slf4j-api:1.7.28
+[info]     | | | | |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | | |   
+[info]     | | | | +-software.amazon.awssdk:utils:2.15.14
+[info]     | | | |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | | |   +-org.slf4j:slf4j-api:1.7.28
+[info]     | | | |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | |   
+[info]     | | | +-software.amazon.awssdk:sdk-core:2.15.14
+[info]     | | | | +-com.fasterxml.jackson.core:jackson-core:2.10.4
+[info]     | | | | +-com.fasterxml.jackson.core:jackson-databind:2.10.4
+[info]     | | | | | +-com.fasterxml.jackson.core:jackson-annotations:2.10.4
+[info]     | | | | | +-com.fasterxml.jackson.core:jackson-core:2.10.4
+[info]     | | | | | 
+[info]     | | | | +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | | | +-org.slf4j:slf4j-api:1.7.28
+[info]     | | | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | | +-software.amazon.awssdk:http-client-spi:2.15.14
+[info]     | | | | | +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | | | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | | | +-software.amazon.awssdk:metrics-spi:2.15.14
+[info]     | | | | | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | | | | +-software.amazon.awssdk:utils:2.15.14
+[info]     | | | | | |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | | | | |   +-org.slf4j:slf4j-api:1.7.28
+[info]     | | | | | |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | | | |   
+[info]     | | | | | +-software.amazon.awssdk:utils:2.15.14
+[info]     | | | | |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | | | |   +-org.slf4j:slf4j-api:1.7.28
+[info]     | | | | |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | | |   
+[info]     | | | | +-software.amazon.awssdk:metrics-spi:2.15.14
+[info]     | | | | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | | | +-software.amazon.awssdk:utils:2.15.14
+[info]     | | | | |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | | | |   +-org.slf4j:slf4j-api:1.7.28
+[info]     | | | | |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | | |   
+[info]     | | | | +-software.amazon.awssdk:profiles:2.15.14
+[info]     | | | | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | | | +-software.amazon.awssdk:utils:2.15.14
+[info]     | | | | |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | | | |   +-org.slf4j:slf4j-api:1.7.28
+[info]     | | | | |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | | |   
+[info]     | | | | +-software.amazon.awssdk:utils:2.15.14
+[info]     | | | |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | | |   +-org.slf4j:slf4j-api:1.7.28
+[info]     | | | |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | |   
+[info]     | | | +-software.amazon.awssdk:utils:2.15.14
+[info]     | | |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | |   +-org.slf4j:slf4j-api:1.7.28
+[info]     | | |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | |   
+[info]     | | +-software.amazon.awssdk:sdk-core:2.15.14
+[info]     | | | +-com.fasterxml.jackson.core:jackson-core:2.10.4
+[info]     | | | +-com.fasterxml.jackson.core:jackson-databind:2.10.4
+[info]     | | | | +-com.fasterxml.jackson.core:jackson-annotations:2.10.4
+[info]     | | | | +-com.fasterxml.jackson.core:jackson-core:2.10.4
+[info]     | | | | 
+[info]     | | | +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | | +-org.slf4j:slf4j-api:1.7.28
+[info]     | | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | +-software.amazon.awssdk:http-client-spi:2.15.14
+[info]     | | | | +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | | +-software.amazon.awssdk:metrics-spi:2.15.14
+[info]     | | | | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | | | +-software.amazon.awssdk:utils:2.15.14
+[info]     | | | | |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | | | |   +-org.slf4j:slf4j-api:1.7.28
+[info]     | | | | |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | | |   
+[info]     | | | | +-software.amazon.awssdk:utils:2.15.14
+[info]     | | | |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | | |   +-org.slf4j:slf4j-api:1.7.28
+[info]     | | | |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | |   
+[info]     | | | +-software.amazon.awssdk:metrics-spi:2.15.14
+[info]     | | | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | | +-software.amazon.awssdk:utils:2.15.14
+[info]     | | | |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | | |   +-org.slf4j:slf4j-api:1.7.28
+[info]     | | | |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | |   
+[info]     | | | +-software.amazon.awssdk:profiles:2.15.14
+[info]     | | | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | | +-software.amazon.awssdk:utils:2.15.14
+[info]     | | | |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | | |   +-org.slf4j:slf4j-api:1.7.28
+[info]     | | | |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | |   
+[info]     | | | +-software.amazon.awssdk:utils:2.15.14
+[info]     | | |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | |   +-org.slf4j:slf4j-api:1.7.28
+[info]     | | |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | |   
+[info]     | | +-software.amazon.awssdk:utils:2.15.14
+[info]     | |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | |   +-org.slf4j:slf4j-api:1.7.28
+[info]     | |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     | |   
+[info]     | +-software.amazon.awssdk:sdk-core:2.15.14
+[info]     |   +-com.fasterxml.jackson.core:jackson-core:2.10.4
+[info]     |   +-com.fasterxml.jackson.core:jackson-databind:2.10.4
+[info]     |   | +-com.fasterxml.jackson.core:jackson-annotations:2.10.4
+[info]     |   | +-com.fasterxml.jackson.core:jackson-core:2.10.4
+[info]     |   | 
+[info]     |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     |   +-org.slf4j:slf4j-api:1.7.28
+[info]     |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     |   +-software.amazon.awssdk:http-client-spi:2.15.14
+[info]     |   | +-org.reactivestreams:reactive-streams:1.0.2
+[info]     |   | +-software.amazon.awssdk:annotations:2.15.14
+[info]     |   | +-software.amazon.awssdk:metrics-spi:2.15.14
+[info]     |   | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     |   | | +-software.amazon.awssdk:utils:2.15.14
+[info]     |   | |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     |   | |   +-org.slf4j:slf4j-api:1.7.28
+[info]     |   | |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     |   | |   
+[info]     |   | +-software.amazon.awssdk:utils:2.15.14
+[info]     |   |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     |   |   +-org.slf4j:slf4j-api:1.7.28
+[info]     |   |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     |   |   
+[info]     |   +-software.amazon.awssdk:metrics-spi:2.15.14
+[info]     |   | +-software.amazon.awssdk:annotations:2.15.14
+[info]     |   | +-software.amazon.awssdk:utils:2.15.14
+[info]     |   |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     |   |   +-org.slf4j:slf4j-api:1.7.28
+[info]     |   |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     |   |   
+[info]     |   +-software.amazon.awssdk:profiles:2.15.14
+[info]     |   | +-software.amazon.awssdk:annotations:2.15.14
+[info]     |   | +-software.amazon.awssdk:utils:2.15.14
+[info]     |   |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     |   |   +-org.slf4j:slf4j-api:1.7.28
+[info]     |   |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     |   |   
+[info]     |   +-software.amazon.awssdk:utils:2.15.14
+[info]     |     +-org.reactivestreams:reactive-streams:1.0.2
+[info]     |     +-org.slf4j:slf4j-api:1.7.28
+[info]     |     +-software.amazon.awssdk:annotations:2.15.14
+[info]     |     
+[info]     +-software.amazon.awssdk:aws-core:2.15.14
+[info]     | +-org.slf4j:slf4j-api:1.7.28
+[info]     | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | +-software.amazon.awssdk:auth:2.15.14
+[info]     | | +-com.fasterxml.jackson.core:jackson-databind:2.10.4
+[info]     | | | +-com.fasterxml.jackson.core:jackson-annotations:2.10.4
+[info]     | | | +-com.fasterxml.jackson.core:jackson-core:2.10.4
+[info]     | | | 
+[info]     | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | +-software.amazon.awssdk:http-client-spi:2.15.14
+[info]     | | | +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | +-software.amazon.awssdk:metrics-spi:2.15.14
+[info]     | | | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | | +-software.amazon.awssdk:utils:2.15.14
+[info]     | | | |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | | |   +-org.slf4j:slf4j-api:1.7.28
+[info]     | | | |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | |   
+[info]     | | | +-software.amazon.awssdk:utils:2.15.14
+[info]     | | |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | |   +-org.slf4j:slf4j-api:1.7.28
+[info]     | | |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | |   
+[info]     | | +-software.amazon.awssdk:profiles:2.15.14
+[info]     | | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | +-software.amazon.awssdk:utils:2.15.14
+[info]     | | |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | |   +-org.slf4j:slf4j-api:1.7.28
+[info]     | | |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | |   
+[info]     | | +-software.amazon.awssdk:regions:2.15.14
+[info]     | | | +-com.fasterxml.jackson.core:jackson-annotations:2.10.4
+[info]     | | | +-com.fasterxml.jackson.core:jackson-databind:2.10.4
+[info]     | | | | +-com.fasterxml.jackson.core:jackson-annotations:2.10.4
+[info]     | | | | +-com.fasterxml.jackson.core:jackson-core:2.10.4
+[info]     | | | | 
+[info]     | | | +-org.slf4j:slf4j-api:1.7.28
+[info]     | | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | +-software.amazon.awssdk:profiles:2.15.14
+[info]     | | | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | | +-software.amazon.awssdk:utils:2.15.14
+[info]     | | | |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | | |   +-org.slf4j:slf4j-api:1.7.28
+[info]     | | | |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | |   
+[info]     | | | +-software.amazon.awssdk:sdk-core:2.15.14
+[info]     | | | | +-com.fasterxml.jackson.core:jackson-core:2.10.4
+[info]     | | | | +-com.fasterxml.jackson.core:jackson-databind:2.10.4
+[info]     | | | | | +-com.fasterxml.jackson.core:jackson-annotations:2.10.4
+[info]     | | | | | +-com.fasterxml.jackson.core:jackson-core:2.10.4
+[info]     | | | | | 
+[info]     | | | | +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | | | +-org.slf4j:slf4j-api:1.7.28
+[info]     | | | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | | +-software.amazon.awssdk:http-client-spi:2.15.14
+[info]     | | | | | +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | | | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | | | +-software.amazon.awssdk:metrics-spi:2.15.14
+[info]     | | | | | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | | | | +-software.amazon.awssdk:utils:2.15.14
+[info]     | | | | | |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | | | | |   +-org.slf4j:slf4j-api:1.7.28
+[info]     | | | | | |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | | | |   
+[info]     | | | | | +-software.amazon.awssdk:utils:2.15.14
+[info]     | | | | |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | | | |   +-org.slf4j:slf4j-api:1.7.28
+[info]     | | | | |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | | |   
+[info]     | | | | +-software.amazon.awssdk:metrics-spi:2.15.14
+[info]     | | | | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | | | +-software.amazon.awssdk:utils:2.15.14
+[info]     | | | | |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | | | |   +-org.slf4j:slf4j-api:1.7.28
+[info]     | | | | |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | | |   
+[info]     | | | | +-software.amazon.awssdk:profiles:2.15.14
+[info]     | | | | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | | | +-software.amazon.awssdk:utils:2.15.14
+[info]     | | | | |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | | | |   +-org.slf4j:slf4j-api:1.7.28
+[info]     | | | | |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | | |   
+[info]     | | | | +-software.amazon.awssdk:utils:2.15.14
+[info]     | | | |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | | |   +-org.slf4j:slf4j-api:1.7.28
+[info]     | | | |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | |   
+[info]     | | | +-software.amazon.awssdk:utils:2.15.14
+[info]     | | |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | |   +-org.slf4j:slf4j-api:1.7.28
+[info]     | | |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | |   
+[info]     | | +-software.amazon.awssdk:sdk-core:2.15.14
+[info]     | | | +-com.fasterxml.jackson.core:jackson-core:2.10.4
+[info]     | | | +-com.fasterxml.jackson.core:jackson-databind:2.10.4
+[info]     | | | | +-com.fasterxml.jackson.core:jackson-annotations:2.10.4
+[info]     | | | | +-com.fasterxml.jackson.core:jackson-core:2.10.4
+[info]     | | | | 
+[info]     | | | +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | | +-org.slf4j:slf4j-api:1.7.28
+[info]     | | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | +-software.amazon.awssdk:http-client-spi:2.15.14
+[info]     | | | | +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | | +-software.amazon.awssdk:metrics-spi:2.15.14
+[info]     | | | | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | | | +-software.amazon.awssdk:utils:2.15.14
+[info]     | | | | |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | | | |   +-org.slf4j:slf4j-api:1.7.28
+[info]     | | | | |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | | |   
+[info]     | | | | +-software.amazon.awssdk:utils:2.15.14
+[info]     | | | |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | | |   +-org.slf4j:slf4j-api:1.7.28
+[info]     | | | |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | |   
+[info]     | | | +-software.amazon.awssdk:metrics-spi:2.15.14
+[info]     | | | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | | +-software.amazon.awssdk:utils:2.15.14
+[info]     | | | |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | | |   +-org.slf4j:slf4j-api:1.7.28
+[info]     | | | |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | |   
+[info]     | | | +-software.amazon.awssdk:profiles:2.15.14
+[info]     | | | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | | +-software.amazon.awssdk:utils:2.15.14
+[info]     | | | |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | | |   +-org.slf4j:slf4j-api:1.7.28
+[info]     | | | |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | |   
+[info]     | | | +-software.amazon.awssdk:utils:2.15.14
+[info]     | | |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | |   +-org.slf4j:slf4j-api:1.7.28
+[info]     | | |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | |   
+[info]     | | +-software.amazon.awssdk:utils:2.15.14
+[info]     | | | +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | | +-org.slf4j:slf4j-api:1.7.28
+[info]     | | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | 
+[info]     | | +-software.amazon.eventstream:eventstream:1.0.1
+[info]     | | 
+[info]     | +-software.amazon.awssdk:http-client-spi:2.15.14
+[info]     | | +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | +-software.amazon.awssdk:metrics-spi:2.15.14
+[info]     | | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | +-software.amazon.awssdk:utils:2.15.14
+[info]     | | |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | |   +-org.slf4j:slf4j-api:1.7.28
+[info]     | | |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | |   
+[info]     | | +-software.amazon.awssdk:utils:2.15.14
+[info]     | |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | |   +-org.slf4j:slf4j-api:1.7.28
+[info]     | |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     | |   
+[info]     | +-software.amazon.awssdk:metrics-spi:2.15.14
+[info]     | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | +-software.amazon.awssdk:utils:2.15.14
+[info]     | |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | |   +-org.slf4j:slf4j-api:1.7.28
+[info]     | |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     | |   
+[info]     | +-software.amazon.awssdk:profiles:2.15.14
+[info]     | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | +-software.amazon.awssdk:utils:2.15.14
+[info]     | |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | |   +-org.slf4j:slf4j-api:1.7.28
+[info]     | |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     | |   
+[info]     | +-software.amazon.awssdk:regions:2.15.14
+[info]     | | +-com.fasterxml.jackson.core:jackson-annotations:2.10.4
+[info]     | | +-com.fasterxml.jackson.core:jackson-databind:2.10.4
+[info]     | | | +-com.fasterxml.jackson.core:jackson-annotations:2.10.4
+[info]     | | | +-com.fasterxml.jackson.core:jackson-core:2.10.4
+[info]     | | | 
+[info]     | | +-org.slf4j:slf4j-api:1.7.28
+[info]     | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | +-software.amazon.awssdk:profiles:2.15.14
+[info]     | | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | +-software.amazon.awssdk:utils:2.15.14
+[info]     | | |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | |   +-org.slf4j:slf4j-api:1.7.28
+[info]     | | |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | |   
+[info]     | | +-software.amazon.awssdk:sdk-core:2.15.14
+[info]     | | | +-com.fasterxml.jackson.core:jackson-core:2.10.4
+[info]     | | | +-com.fasterxml.jackson.core:jackson-databind:2.10.4
+[info]     | | | | +-com.fasterxml.jackson.core:jackson-annotations:2.10.4
+[info]     | | | | +-com.fasterxml.jackson.core:jackson-core:2.10.4
+[info]     | | | | 
+[info]     | | | +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | | +-org.slf4j:slf4j-api:1.7.28
+[info]     | | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | +-software.amazon.awssdk:http-client-spi:2.15.14
+[info]     | | | | +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | | +-software.amazon.awssdk:metrics-spi:2.15.14
+[info]     | | | | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | | | +-software.amazon.awssdk:utils:2.15.14
+[info]     | | | | |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | | | |   +-org.slf4j:slf4j-api:1.7.28
+[info]     | | | | |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | | |   
+[info]     | | | | +-software.amazon.awssdk:utils:2.15.14
+[info]     | | | |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | | |   +-org.slf4j:slf4j-api:1.7.28
+[info]     | | | |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | |   
+[info]     | | | +-software.amazon.awssdk:metrics-spi:2.15.14
+[info]     | | | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | | +-software.amazon.awssdk:utils:2.15.14
+[info]     | | | |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | | |   +-org.slf4j:slf4j-api:1.7.28
+[info]     | | | |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | |   
+[info]     | | | +-software.amazon.awssdk:profiles:2.15.14
+[info]     | | | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | | +-software.amazon.awssdk:utils:2.15.14
+[info]     | | | |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | | |   +-org.slf4j:slf4j-api:1.7.28
+[info]     | | | |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | |   
+[info]     | | | +-software.amazon.awssdk:utils:2.15.14
+[info]     | | |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | |   +-org.slf4j:slf4j-api:1.7.28
+[info]     | | |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | |   
+[info]     | | +-software.amazon.awssdk:utils:2.15.14
+[info]     | |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | |   +-org.slf4j:slf4j-api:1.7.28
+[info]     | |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     | |   
+[info]     | +-software.amazon.awssdk:sdk-core:2.15.14
+[info]     | | +-com.fasterxml.jackson.core:jackson-core:2.10.4
+[info]     | | +-com.fasterxml.jackson.core:jackson-databind:2.10.4
+[info]     | | | +-com.fasterxml.jackson.core:jackson-annotations:2.10.4
+[info]     | | | +-com.fasterxml.jackson.core:jackson-core:2.10.4
+[info]     | | | 
+[info]     | | +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | +-org.slf4j:slf4j-api:1.7.28
+[info]     | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | +-software.amazon.awssdk:http-client-spi:2.15.14
+[info]     | | | +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | +-software.amazon.awssdk:metrics-spi:2.15.14
+[info]     | | | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | | +-software.amazon.awssdk:utils:2.15.14
+[info]     | | | |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | | |   +-org.slf4j:slf4j-api:1.7.28
+[info]     | | | |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | |   
+[info]     | | | +-software.amazon.awssdk:utils:2.15.14
+[info]     | | |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | |   +-org.slf4j:slf4j-api:1.7.28
+[info]     | | |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | |   
+[info]     | | +-software.amazon.awssdk:metrics-spi:2.15.14
+[info]     | | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | +-software.amazon.awssdk:utils:2.15.14
+[info]     | | |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | |   +-org.slf4j:slf4j-api:1.7.28
+[info]     | | |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | |   
+[info]     | | +-software.amazon.awssdk:profiles:2.15.14
+[info]     | | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | +-software.amazon.awssdk:utils:2.15.14
+[info]     | | |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | |   +-org.slf4j:slf4j-api:1.7.28
+[info]     | | |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | |   
+[info]     | | +-software.amazon.awssdk:utils:2.15.14
+[info]     | |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | |   +-org.slf4j:slf4j-api:1.7.28
+[info]     | |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     | |   
+[info]     | +-software.amazon.awssdk:utils:2.15.14
+[info]     | | +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | +-org.slf4j:slf4j-api:1.7.28
+[info]     | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | 
+[info]     | +-software.amazon.eventstream:eventstream:1.0.1
+[info]     | 
+[info]     +-software.amazon.awssdk:aws-json-protocol:2.15.14
+[info]     | +-com.fasterxml.jackson.core:jackson-core:2.10.4
+[info]     | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | +-software.amazon.awssdk:aws-core:2.15.14
+[info]     | | +-org.slf4j:slf4j-api:1.7.28
+[info]     | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | +-software.amazon.awssdk:auth:2.15.14
+[info]     | | | +-com.fasterxml.jackson.core:jackson-databind:2.10.4
+[info]     | | | | +-com.fasterxml.jackson.core:jackson-annotations:2.10.4
+[info]     | | | | +-com.fasterxml.jackson.core:jackson-core:2.10.4
+[info]     | | | | 
+[info]     | | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | +-software.amazon.awssdk:http-client-spi:2.15.14
+[info]     | | | | +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | | +-software.amazon.awssdk:metrics-spi:2.15.14
+[info]     | | | | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | | | +-software.amazon.awssdk:utils:2.15.14
+[info]     | | | | |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | | | |   +-org.slf4j:slf4j-api:1.7.28
+[info]     | | | | |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | | |   
+[info]     | | | | +-software.amazon.awssdk:utils:2.15.14
+[info]     | | | |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | | |   +-org.slf4j:slf4j-api:1.7.28
+[info]     | | | |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | |   
+[info]     | | | +-software.amazon.awssdk:profiles:2.15.14
+[info]     | | | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | | +-software.amazon.awssdk:utils:2.15.14
+[info]     | | | |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | | |   +-org.slf4j:slf4j-api:1.7.28
+[info]     | | | |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | |   
+[info]     | | | +-software.amazon.awssdk:regions:2.15.14
+[info]     | | | | +-com.fasterxml.jackson.core:jackson-annotations:2.10.4
+[info]     | | | | +-com.fasterxml.jackson.core:jackson-databind:2.10.4
+[info]     | | | | | +-com.fasterxml.jackson.core:jackson-annotations:2.10.4
+[info]     | | | | | +-com.fasterxml.jackson.core:jackson-core:2.10.4
+[info]     | | | | | 
+[info]     | | | | +-org.slf4j:slf4j-api:1.7.28
+[info]     | | | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | | +-software.amazon.awssdk:profiles:2.15.14
+[info]     | | | | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | | | +-software.amazon.awssdk:utils:2.15.14
+[info]     | | | | |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | | | |   +-org.slf4j:slf4j-api:1.7.28
+[info]     | | | | |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | | |   
+[info]     | | | | +-software.amazon.awssdk:sdk-core:2.15.14
+[info]     | | | | | +-com.fasterxml.jackson.core:jackson-core:2.10.4
+[info]     | | | | | +-com.fasterxml.jackson.core:jackson-databind:2.10.4
+[info]     | | | | | | +-com.fasterxml.jackson.core:jackson-annotations:2.10.4
+[info]     | | | | | | +-com.fasterxml.jackson.core:jackson-core:2.10.4
+[info]     | | | | | | 
+[info]     | | | | | +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | | | | +-org.slf4j:slf4j-api:1.7.28
+[info]     | | | | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | | | +-software.amazon.awssdk:http-client-spi:2.15.14
+[info]     | | | | | | +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | | | | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | | | | +-software.amazon.awssdk:metrics-spi:2.15.14
+[info]     | | | | | | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | | | | | +-software.amazon.awssdk:utils:2.15.14
+[info]     | | | | | | |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | | | | | |   +-org.slf4j:slf4j-api:1.7.28
+[info]     | | | | | | |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | | | | |   
+[info]     | | | | | | +-software.amazon.awssdk:utils:2.15.14
+[info]     | | | | | |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | | | | |   +-org.slf4j:slf4j-api:1.7.28
+[info]     | | | | | |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | | | |   
+[info]     | | | | | +-software.amazon.awssdk:metrics-spi:2.15.14
+[info]     | | | | | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | | | | +-software.amazon.awssdk:utils:2.15.14
+[info]     | | | | | |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | | | | |   +-org.slf4j:slf4j-api:1.7.28
+[info]     | | | | | |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | | | |   
+[info]     | | | | | +-software.amazon.awssdk:profiles:2.15.14
+[info]     | | | | | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | | | | +-software.amazon.awssdk:utils:2.15.14
+[info]     | | | | | |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | | | | |   +-org.slf4j:slf4j-api:1.7.28
+[info]     | | | | | |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | | | |   
+[info]     | | | | | +-software.amazon.awssdk:utils:2.15.14
+[info]     | | | | |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | | | |   +-org.slf4j:slf4j-api:1.7.28
+[info]     | | | | |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | | |   
+[info]     | | | | +-software.amazon.awssdk:utils:2.15.14
+[info]     | | | |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | | |   +-org.slf4j:slf4j-api:1.7.28
+[info]     | | | |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | |   
+[info]     | | | +-software.amazon.awssdk:sdk-core:2.15.14
+[info]     | | | | +-com.fasterxml.jackson.core:jackson-core:2.10.4
+[info]     | | | | +-com.fasterxml.jackson.core:jackson-databind:2.10.4
+[info]     | | | | | +-com.fasterxml.jackson.core:jackson-annotations:2.10.4
+[info]     | | | | | +-com.fasterxml.jackson.core:jackson-core:2.10.4
+[info]     | | | | | 
+[info]     | | | | +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | | | +-org.slf4j:slf4j-api:1.7.28
+[info]     | | | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | | +-software.amazon.awssdk:http-client-spi:2.15.14
+[info]     | | | | | +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | | | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | | | +-software.amazon.awssdk:metrics-spi:2.15.14
+[info]     | | | | | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | | | | +-software.amazon.awssdk:utils:2.15.14
+[info]     | | | | | |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | | | | |   +-org.slf4j:slf4j-api:1.7.28
+[info]     | | | | | |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | | | |   
+[info]     | | | | | +-software.amazon.awssdk:utils:2.15.14
+[info]     | | | | |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | | | |   +-org.slf4j:slf4j-api:1.7.28
+[info]     | | | | |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | | |   
+[info]     | | | | +-software.amazon.awssdk:metrics-spi:2.15.14
+[info]     | | | | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | | | +-software.amazon.awssdk:utils:2.15.14
+[info]     | | | | |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | | | |   +-org.slf4j:slf4j-api:1.7.28
+[info]     | | | | |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | | |   
+[info]     | | | | +-software.amazon.awssdk:profiles:2.15.14
+[info]     | | | | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | | | +-software.amazon.awssdk:utils:2.15.14
+[info]     | | | | |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | | | |   +-org.slf4j:slf4j-api:1.7.28
+[info]     | | | | |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | | |   
+[info]     | | | | +-software.amazon.awssdk:utils:2.15.14
+[info]     | | | |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | | |   +-org.slf4j:slf4j-api:1.7.28
+[info]     | | | |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | |   
+[info]     | | | +-software.amazon.awssdk:utils:2.15.14
+[info]     | | | | +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | | | +-org.slf4j:slf4j-api:1.7.28
+[info]     | | | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | | 
+[info]     | | | +-software.amazon.eventstream:eventstream:1.0.1
+[info]     | | | 
+[info]     | | +-software.amazon.awssdk:http-client-spi:2.15.14
+[info]     | | | +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | +-software.amazon.awssdk:metrics-spi:2.15.14
+[info]     | | | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | | +-software.amazon.awssdk:utils:2.15.14
+[info]     | | | |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | | |   +-org.slf4j:slf4j-api:1.7.28
+[info]     | | | |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | |   
+[info]     | | | +-software.amazon.awssdk:utils:2.15.14
+[info]     | | |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | |   +-org.slf4j:slf4j-api:1.7.28
+[info]     | | |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | |   
+[info]     | | +-software.amazon.awssdk:metrics-spi:2.15.14
+[info]     | | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | +-software.amazon.awssdk:utils:2.15.14
+[info]     | | |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | |   +-org.slf4j:slf4j-api:1.7.28
+[info]     | | |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | |   
+[info]     | | +-software.amazon.awssdk:profiles:2.15.14
+[info]     | | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | +-software.amazon.awssdk:utils:2.15.14
+[info]     | | |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | |   +-org.slf4j:slf4j-api:1.7.28
+[info]     | | |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | |   
+[info]     | | +-software.amazon.awssdk:regions:2.15.14
+[info]     | | | +-com.fasterxml.jackson.core:jackson-annotations:2.10.4
+[info]     | | | +-com.fasterxml.jackson.core:jackson-databind:2.10.4
+[info]     | | | | +-com.fasterxml.jackson.core:jackson-annotations:2.10.4
+[info]     | | | | +-com.fasterxml.jackson.core:jackson-core:2.10.4
+[info]     | | | | 
+[info]     | | | +-org.slf4j:slf4j-api:1.7.28
+[info]     | | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | +-software.amazon.awssdk:profiles:2.15.14
+[info]     | | | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | | +-software.amazon.awssdk:utils:2.15.14
+[info]     | | | |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | | |   +-org.slf4j:slf4j-api:1.7.28
+[info]     | | | |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | |   
+[info]     | | | +-software.amazon.awssdk:sdk-core:2.15.14
+[info]     | | | | +-com.fasterxml.jackson.core:jackson-core:2.10.4
+[info]     | | | | +-com.fasterxml.jackson.core:jackson-databind:2.10.4
+[info]     | | | | | +-com.fasterxml.jackson.core:jackson-annotations:2.10.4
+[info]     | | | | | +-com.fasterxml.jackson.core:jackson-core:2.10.4
+[info]     | | | | | 
+[info]     | | | | +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | | | +-org.slf4j:slf4j-api:1.7.28
+[info]     | | | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | | +-software.amazon.awssdk:http-client-spi:2.15.14
+[info]     | | | | | +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | | | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | | | +-software.amazon.awssdk:metrics-spi:2.15.14
+[info]     | | | | | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | | | | +-software.amazon.awssdk:utils:2.15.14
+[info]     | | | | | |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | | | | |   +-org.slf4j:slf4j-api:1.7.28
+[info]     | | | | | |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | | | |   
+[info]     | | | | | +-software.amazon.awssdk:utils:2.15.14
+[info]     | | | | |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | | | |   +-org.slf4j:slf4j-api:1.7.28
+[info]     | | | | |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | | |   
+[info]     | | | | +-software.amazon.awssdk:metrics-spi:2.15.14
+[info]     | | | | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | | | +-software.amazon.awssdk:utils:2.15.14
+[info]     | | | | |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | | | |   +-org.slf4j:slf4j-api:1.7.28
+[info]     | | | | |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | | |   
+[info]     | | | | +-software.amazon.awssdk:profiles:2.15.14
+[info]     | | | | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | | | +-software.amazon.awssdk:utils:2.15.14
+[info]     | | | | |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | | | |   +-org.slf4j:slf4j-api:1.7.28
+[info]     | | | | |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | | |   
+[info]     | | | | +-software.amazon.awssdk:utils:2.15.14
+[info]     | | | |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | | |   +-org.slf4j:slf4j-api:1.7.28
+[info]     | | | |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | |   
+[info]     | | | +-software.amazon.awssdk:utils:2.15.14
+[info]     | | |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | |   +-org.slf4j:slf4j-api:1.7.28
+[info]     | | |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | |   
+[info]     | | +-software.amazon.awssdk:sdk-core:2.15.14
+[info]     | | | +-com.fasterxml.jackson.core:jackson-core:2.10.4
+[info]     | | | +-com.fasterxml.jackson.core:jackson-databind:2.10.4
+[info]     | | | | +-com.fasterxml.jackson.core:jackson-annotations:2.10.4
+[info]     | | | | +-com.fasterxml.jackson.core:jackson-core:2.10.4
+[info]     | | | | 
+[info]     | | | +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | | +-org.slf4j:slf4j-api:1.7.28
+[info]     | | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | +-software.amazon.awssdk:http-client-spi:2.15.14
+[info]     | | | | +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | | +-software.amazon.awssdk:metrics-spi:2.15.14
+[info]     | | | | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | | | +-software.amazon.awssdk:utils:2.15.14
+[info]     | | | | |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | | | |   +-org.slf4j:slf4j-api:1.7.28
+[info]     | | | | |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | | |   
+[info]     | | | | +-software.amazon.awssdk:utils:2.15.14
+[info]     | | | |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | | |   +-org.slf4j:slf4j-api:1.7.28
+[info]     | | | |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | |   
+[info]     | | | +-software.amazon.awssdk:metrics-spi:2.15.14
+[info]     | | | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | | +-software.amazon.awssdk:utils:2.15.14
+[info]     | | | |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | | |   +-org.slf4j:slf4j-api:1.7.28
+[info]     | | | |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | |   
+[info]     | | | +-software.amazon.awssdk:profiles:2.15.14
+[info]     | | | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | | +-software.amazon.awssdk:utils:2.15.14
+[info]     | | | |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | | |   +-org.slf4j:slf4j-api:1.7.28
+[info]     | | | |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | |   
+[info]     | | | +-software.amazon.awssdk:utils:2.15.14
+[info]     | | |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | |   +-org.slf4j:slf4j-api:1.7.28
+[info]     | | |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | |   
+[info]     | | +-software.amazon.awssdk:utils:2.15.14
+[info]     | | | +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | | +-org.slf4j:slf4j-api:1.7.28
+[info]     | | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | 
+[info]     | | +-software.amazon.eventstream:eventstream:1.0.1
+[info]     | | 
+[info]     | +-software.amazon.awssdk:http-client-spi:2.15.14
+[info]     | | +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | +-software.amazon.awssdk:metrics-spi:2.15.14
+[info]     | | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | +-software.amazon.awssdk:utils:2.15.14
+[info]     | | |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | |   +-org.slf4j:slf4j-api:1.7.28
+[info]     | | |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | |   
+[info]     | | +-software.amazon.awssdk:utils:2.15.14
+[info]     | |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | |   +-org.slf4j:slf4j-api:1.7.28
+[info]     | |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     | |   
+[info]     | +-software.amazon.awssdk:protocol-core:2.15.14
+[info]     | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | +-software.amazon.awssdk:http-client-spi:2.15.14
+[info]     | | | +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | +-software.amazon.awssdk:metrics-spi:2.15.14
+[info]     | | | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | | +-software.amazon.awssdk:utils:2.15.14
+[info]     | | | |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | | |   +-org.slf4j:slf4j-api:1.7.28
+[info]     | | | |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | |   
+[info]     | | | +-software.amazon.awssdk:utils:2.15.14
+[info]     | | |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | |   +-org.slf4j:slf4j-api:1.7.28
+[info]     | | |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | |   
+[info]     | | +-software.amazon.awssdk:sdk-core:2.15.14
+[info]     | | | +-com.fasterxml.jackson.core:jackson-core:2.10.4
+[info]     | | | +-com.fasterxml.jackson.core:jackson-databind:2.10.4
+[info]     | | | | +-com.fasterxml.jackson.core:jackson-annotations:2.10.4
+[info]     | | | | +-com.fasterxml.jackson.core:jackson-core:2.10.4
+[info]     | | | | 
+[info]     | | | +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | | +-org.slf4j:slf4j-api:1.7.28
+[info]     | | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | +-software.amazon.awssdk:http-client-spi:2.15.14
+[info]     | | | | +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | | +-software.amazon.awssdk:metrics-spi:2.15.14
+[info]     | | | | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | | | +-software.amazon.awssdk:utils:2.15.14
+[info]     | | | | |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | | | |   +-org.slf4j:slf4j-api:1.7.28
+[info]     | | | | |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | | |   
+[info]     | | | | +-software.amazon.awssdk:utils:2.15.14
+[info]     | | | |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | | |   +-org.slf4j:slf4j-api:1.7.28
+[info]     | | | |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | |   
+[info]     | | | +-software.amazon.awssdk:metrics-spi:2.15.14
+[info]     | | | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | | +-software.amazon.awssdk:utils:2.15.14
+[info]     | | | |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | | |   +-org.slf4j:slf4j-api:1.7.28
+[info]     | | | |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | |   
+[info]     | | | +-software.amazon.awssdk:profiles:2.15.14
+[info]     | | | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | | +-software.amazon.awssdk:utils:2.15.14
+[info]     | | | |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | | |   +-org.slf4j:slf4j-api:1.7.28
+[info]     | | | |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | |   
+[info]     | | | +-software.amazon.awssdk:utils:2.15.14
+[info]     | | |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | |   +-org.slf4j:slf4j-api:1.7.28
+[info]     | | |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | |   
+[info]     | | +-software.amazon.awssdk:utils:2.15.14
+[info]     | |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | |   +-org.slf4j:slf4j-api:1.7.28
+[info]     | |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     | |   
+[info]     | +-software.amazon.awssdk:sdk-core:2.15.14
+[info]     | | +-com.fasterxml.jackson.core:jackson-core:2.10.4
+[info]     | | +-com.fasterxml.jackson.core:jackson-databind:2.10.4
+[info]     | | | +-com.fasterxml.jackson.core:jackson-annotations:2.10.4
+[info]     | | | +-com.fasterxml.jackson.core:jackson-core:2.10.4
+[info]     | | | 
+[info]     | | +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | +-org.slf4j:slf4j-api:1.7.28
+[info]     | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | +-software.amazon.awssdk:http-client-spi:2.15.14
+[info]     | | | +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | +-software.amazon.awssdk:metrics-spi:2.15.14
+[info]     | | | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | | +-software.amazon.awssdk:utils:2.15.14
+[info]     | | | |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | | |   +-org.slf4j:slf4j-api:1.7.28
+[info]     | | | |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | |   
+[info]     | | | +-software.amazon.awssdk:utils:2.15.14
+[info]     | | |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | |   +-org.slf4j:slf4j-api:1.7.28
+[info]     | | |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | |   
+[info]     | | +-software.amazon.awssdk:metrics-spi:2.15.14
+[info]     | | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | +-software.amazon.awssdk:utils:2.15.14
+[info]     | | |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | |   +-org.slf4j:slf4j-api:1.7.28
+[info]     | | |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | |   
+[info]     | | +-software.amazon.awssdk:profiles:2.15.14
+[info]     | | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | +-software.amazon.awssdk:utils:2.15.14
+[info]     | | |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | |   +-org.slf4j:slf4j-api:1.7.28
+[info]     | | |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | |   
+[info]     | | +-software.amazon.awssdk:utils:2.15.14
+[info]     | |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | |   +-org.slf4j:slf4j-api:1.7.28
+[info]     | |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     | |   
+[info]     | +-software.amazon.awssdk:utils:2.15.14
+[info]     |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     |   +-org.slf4j:slf4j-api:1.7.28
+[info]     |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     |   
+[info]     +-software.amazon.awssdk:http-client-spi:2.15.14
+[info]     | +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | +-software.amazon.awssdk:metrics-spi:2.15.14
+[info]     | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | +-software.amazon.awssdk:utils:2.15.14
+[info]     | |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | |   +-org.slf4j:slf4j-api:1.7.28
+[info]     | |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     | |   
+[info]     | +-software.amazon.awssdk:utils:2.15.14
+[info]     |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     |   +-org.slf4j:slf4j-api:1.7.28
+[info]     |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     |   
+[info]     +-software.amazon.awssdk:metrics-spi:2.15.14
+[info]     | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | +-software.amazon.awssdk:utils:2.15.14
+[info]     |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     |   +-org.slf4j:slf4j-api:1.7.28
+[info]     |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     |   
+[info]     +-software.amazon.awssdk:netty-nio-client:2.15.14
+[info]     | +-com.typesafe.netty:netty-reactive-streams-http:2.0.4
+[info]     | | +-com.typesafe.netty:netty-reactive-streams:2.0.4
+[info]     | | | +-io.netty:netty-handler:4.1.43.Final (evicted by: 4.1.46.Final)
+[info]     | | | +-io.netty:netty-handler:4.1.46.Final
+[info]     | | | | +-io.netty:netty-buffer:4.1.46.Final
+[info]     | | | | | +-io.netty:netty-common:4.1.46.Final
+[info]     | | | | | 
+[info]     | | | | +-io.netty:netty-codec:4.1.46.Final
+[info]     | | | | | +-io.netty:netty-buffer:4.1.46.Final
+[info]     | | | | | | +-io.netty:netty-common:4.1.46.Final
+[info]     | | | | | | 
+[info]     | | | | | +-io.netty:netty-common:4.1.46.Final
+[info]     | | | | | +-io.netty:netty-transport:4.1.46.Final
+[info]     | | | | |   +-io.netty:netty-buffer:4.1.46.Final
+[info]     | | | | |   | +-io.netty:netty-common:4.1.46.Final
+[info]     | | | | |   | 
+[info]     | | | | |   +-io.netty:netty-common:4.1.46.Final
+[info]     | | | | |   +-io.netty:netty-resolver:4.1.46.Final
+[info]     | | | | |     +-io.netty:netty-common:4.1.46.Final
+[info]     | | | | |     
+[info]     | | | | +-io.netty:netty-common:4.1.46.Final
+[info]     | | | | +-io.netty:netty-resolver:4.1.46.Final
+[info]     | | | | | +-io.netty:netty-common:4.1.46.Final
+[info]     | | | | | 
+[info]     | | | | +-io.netty:netty-transport:4.1.46.Final
+[info]     | | | |   +-io.netty:netty-buffer:4.1.46.Final
+[info]     | | | |   | +-io.netty:netty-common:4.1.46.Final
+[info]     | | | |   | 
+[info]     | | | |   +-io.netty:netty-common:4.1.46.Final
+[info]     | | | |   +-io.netty:netty-resolver:4.1.46.Final
+[info]     | | | |     +-io.netty:netty-common:4.1.46.Final
+[info]     | | | |     
+[info]     | | | +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | | +-org.reactivestreams:reactive-streams:1.0.3 (evicted by: 1.0.2)
+[info]     | | | 
+[info]     | | +-io.netty:netty-codec-http:4.1.43.Final (evicted by: 4.1.46.Final)
+[info]     | | +-io.netty:netty-codec-http:4.1.46.Final
+[info]     | |   +-io.netty:netty-buffer:4.1.46.Final
+[info]     | |   | +-io.netty:netty-common:4.1.46.Final
+[info]     | |   | 
+[info]     | |   +-io.netty:netty-codec:4.1.46.Final
+[info]     | |   | +-io.netty:netty-buffer:4.1.46.Final
+[info]     | |   | | +-io.netty:netty-common:4.1.46.Final
+[info]     | |   | | 
+[info]     | |   | +-io.netty:netty-common:4.1.46.Final
+[info]     | |   | +-io.netty:netty-transport:4.1.46.Final
+[info]     | |   |   +-io.netty:netty-buffer:4.1.46.Final
+[info]     | |   |   | +-io.netty:netty-common:4.1.46.Final
+[info]     | |   |   | 
+[info]     | |   |   +-io.netty:netty-common:4.1.46.Final
+[info]     | |   |   +-io.netty:netty-resolver:4.1.46.Final
+[info]     | |   |     +-io.netty:netty-common:4.1.46.Final
+[info]     | |   |     
+[info]     | |   +-io.netty:netty-common:4.1.46.Final
+[info]     | |   +-io.netty:netty-handler:4.1.46.Final
+[info]     | |   | +-io.netty:netty-buffer:4.1.46.Final
+[info]     | |   | | +-io.netty:netty-common:4.1.46.Final
+[info]     | |   | | 
+[info]     | |   | +-io.netty:netty-codec:4.1.46.Final
+[info]     | |   | | +-io.netty:netty-buffer:4.1.46.Final
+[info]     | |   | | | +-io.netty:netty-common:4.1.46.Final
+[info]     | |   | | | 
+[info]     | |   | | +-io.netty:netty-common:4.1.46.Final
+[info]     | |   | | +-io.netty:netty-transport:4.1.46.Final
+[info]     | |   | |   +-io.netty:netty-buffer:4.1.46.Final
+[info]     | |   | |   | +-io.netty:netty-common:4.1.46.Final
+[info]     | |   | |   | 
+[info]     | |   | |   +-io.netty:netty-common:4.1.46.Final
+[info]     | |   | |   +-io.netty:netty-resolver:4.1.46.Final
+[info]     | |   | |     +-io.netty:netty-common:4.1.46.Final
+[info]     | |   | |     
+[info]     | |   | +-io.netty:netty-common:4.1.46.Final
+[info]     | |   | +-io.netty:netty-resolver:4.1.46.Final
+[info]     | |   | | +-io.netty:netty-common:4.1.46.Final
+[info]     | |   | | 
+[info]     | |   | +-io.netty:netty-transport:4.1.46.Final
+[info]     | |   |   +-io.netty:netty-buffer:4.1.46.Final
+[info]     | |   |   | +-io.netty:netty-common:4.1.46.Final
+[info]     | |   |   | 
+[info]     | |   |   +-io.netty:netty-common:4.1.46.Final
+[info]     | |   |   +-io.netty:netty-resolver:4.1.46.Final
+[info]     | |   |     +-io.netty:netty-common:4.1.46.Final
+[info]     | |   |     
+[info]     | |   +-io.netty:netty-transport:4.1.46.Final
+[info]     | |     +-io.netty:netty-buffer:4.1.46.Final
+[info]     | |     | +-io.netty:netty-common:4.1.46.Final
+[info]     | |     | 
+[info]     | |     +-io.netty:netty-common:4.1.46.Final
+[info]     | |     +-io.netty:netty-resolver:4.1.46.Final
+[info]     | |       +-io.netty:netty-common:4.1.46.Final
+[info]     | |       
+[info]     | +-io.netty:netty-buffer:4.1.46.Final
+[info]     | | +-io.netty:netty-common:4.1.46.Final
+[info]     | | 
+[info]     | +-io.netty:netty-codec-http2:4.1.46.Final
+[info]     | | +-io.netty:netty-buffer:4.1.46.Final
+[info]     | | | +-io.netty:netty-common:4.1.46.Final
+[info]     | | | 
+[info]     | | +-io.netty:netty-codec-http:4.1.46.Final
+[info]     | | | +-io.netty:netty-buffer:4.1.46.Final
+[info]     | | | | +-io.netty:netty-common:4.1.46.Final
+[info]     | | | | 
+[info]     | | | +-io.netty:netty-codec:4.1.46.Final
+[info]     | | | | +-io.netty:netty-buffer:4.1.46.Final
+[info]     | | | | | +-io.netty:netty-common:4.1.46.Final
+[info]     | | | | | 
+[info]     | | | | +-io.netty:netty-common:4.1.46.Final
+[info]     | | | | +-io.netty:netty-transport:4.1.46.Final
+[info]     | | | |   +-io.netty:netty-buffer:4.1.46.Final
+[info]     | | | |   | +-io.netty:netty-common:4.1.46.Final
+[info]     | | | |   | 
+[info]     | | | |   +-io.netty:netty-common:4.1.46.Final
+[info]     | | | |   +-io.netty:netty-resolver:4.1.46.Final
+[info]     | | | |     +-io.netty:netty-common:4.1.46.Final
+[info]     | | | |     
+[info]     | | | +-io.netty:netty-common:4.1.46.Final
+[info]     | | | +-io.netty:netty-handler:4.1.46.Final
+[info]     | | | | +-io.netty:netty-buffer:4.1.46.Final
+[info]     | | | | | +-io.netty:netty-common:4.1.46.Final
+[info]     | | | | | 
+[info]     | | | | +-io.netty:netty-codec:4.1.46.Final
+[info]     | | | | | +-io.netty:netty-buffer:4.1.46.Final
+[info]     | | | | | | +-io.netty:netty-common:4.1.46.Final
+[info]     | | | | | | 
+[info]     | | | | | +-io.netty:netty-common:4.1.46.Final
+[info]     | | | | | +-io.netty:netty-transport:4.1.46.Final
+[info]     | | | | |   +-io.netty:netty-buffer:4.1.46.Final
+[info]     | | | | |   | +-io.netty:netty-common:4.1.46.Final
+[info]     | | | | |   | 
+[info]     | | | | |   +-io.netty:netty-common:4.1.46.Final
+[info]     | | | | |   +-io.netty:netty-resolver:4.1.46.Final
+[info]     | | | | |     +-io.netty:netty-common:4.1.46.Final
+[info]     | | | | |     
+[info]     | | | | +-io.netty:netty-common:4.1.46.Final
+[info]     | | | | +-io.netty:netty-resolver:4.1.46.Final
+[info]     | | | | | +-io.netty:netty-common:4.1.46.Final
+[info]     | | | | | 
+[info]     | | | | +-io.netty:netty-transport:4.1.46.Final
+[info]     | | | |   +-io.netty:netty-buffer:4.1.46.Final
+[info]     | | | |   | +-io.netty:netty-common:4.1.46.Final
+[info]     | | | |   | 
+[info]     | | | |   +-io.netty:netty-common:4.1.46.Final
+[info]     | | | |   +-io.netty:netty-resolver:4.1.46.Final
+[info]     | | | |     +-io.netty:netty-common:4.1.46.Final
+[info]     | | | |     
+[info]     | | | +-io.netty:netty-transport:4.1.46.Final
+[info]     | | |   +-io.netty:netty-buffer:4.1.46.Final
+[info]     | | |   | +-io.netty:netty-common:4.1.46.Final
+[info]     | | |   | 
+[info]     | | |   +-io.netty:netty-common:4.1.46.Final
+[info]     | | |   +-io.netty:netty-resolver:4.1.46.Final
+[info]     | | |     +-io.netty:netty-common:4.1.46.Final
+[info]     | | |     
+[info]     | | +-io.netty:netty-codec:4.1.46.Final
+[info]     | | | +-io.netty:netty-buffer:4.1.46.Final
+[info]     | | | | +-io.netty:netty-common:4.1.46.Final
+[info]     | | | | 
+[info]     | | | +-io.netty:netty-common:4.1.46.Final
+[info]     | | | +-io.netty:netty-transport:4.1.46.Final
+[info]     | | |   +-io.netty:netty-buffer:4.1.46.Final
+[info]     | | |   | +-io.netty:netty-common:4.1.46.Final
+[info]     | | |   | 
+[info]     | | |   +-io.netty:netty-common:4.1.46.Final
+[info]     | | |   +-io.netty:netty-resolver:4.1.46.Final
+[info]     | | |     +-io.netty:netty-common:4.1.46.Final
+[info]     | | |     
+[info]     | | +-io.netty:netty-common:4.1.46.Final
+[info]     | | +-io.netty:netty-handler:4.1.46.Final
+[info]     | | | +-io.netty:netty-buffer:4.1.46.Final
+[info]     | | | | +-io.netty:netty-common:4.1.46.Final
+[info]     | | | | 
+[info]     | | | +-io.netty:netty-codec:4.1.46.Final
+[info]     | | | | +-io.netty:netty-buffer:4.1.46.Final
+[info]     | | | | | +-io.netty:netty-common:4.1.46.Final
+[info]     | | | | | 
+[info]     | | | | +-io.netty:netty-common:4.1.46.Final
+[info]     | | | | +-io.netty:netty-transport:4.1.46.Final
+[info]     | | | |   +-io.netty:netty-buffer:4.1.46.Final
+[info]     | | | |   | +-io.netty:netty-common:4.1.46.Final
+[info]     | | | |   | 
+[info]     | | | |   +-io.netty:netty-common:4.1.46.Final
+[info]     | | | |   +-io.netty:netty-resolver:4.1.46.Final
+[info]     | | | |     +-io.netty:netty-common:4.1.46.Final
+[info]     | | | |     
+[info]     | | | +-io.netty:netty-common:4.1.46.Final
+[info]     | | | +-io.netty:netty-resolver:4.1.46.Final
+[info]     | | | | +-io.netty:netty-common:4.1.46.Final
+[info]     | | | | 
+[info]     | | | +-io.netty:netty-transport:4.1.46.Final
+[info]     | | |   +-io.netty:netty-buffer:4.1.46.Final
+[info]     | | |   | +-io.netty:netty-common:4.1.46.Final
+[info]     | | |   | 
+[info]     | | |   +-io.netty:netty-common:4.1.46.Final
+[info]     | | |   +-io.netty:netty-resolver:4.1.46.Final
+[info]     | | |     +-io.netty:netty-common:4.1.46.Final
+[info]     | | |     
+[info]     | | +-io.netty:netty-transport:4.1.46.Final
+[info]     | |   +-io.netty:netty-buffer:4.1.46.Final
+[info]     | |   | +-io.netty:netty-common:4.1.46.Final
+[info]     | |   | 
+[info]     | |   +-io.netty:netty-common:4.1.46.Final
+[info]     | |   +-io.netty:netty-resolver:4.1.46.Final
+[info]     | |     +-io.netty:netty-common:4.1.46.Final
+[info]     | |     
+[info]     | +-io.netty:netty-codec-http:4.1.46.Final
+[info]     | | +-io.netty:netty-buffer:4.1.46.Final
+[info]     | | | +-io.netty:netty-common:4.1.46.Final
+[info]     | | | 
+[info]     | | +-io.netty:netty-codec:4.1.46.Final
+[info]     | | | +-io.netty:netty-buffer:4.1.46.Final
+[info]     | | | | +-io.netty:netty-common:4.1.46.Final
+[info]     | | | | 
+[info]     | | | +-io.netty:netty-common:4.1.46.Final
+[info]     | | | +-io.netty:netty-transport:4.1.46.Final
+[info]     | | |   +-io.netty:netty-buffer:4.1.46.Final
+[info]     | | |   | +-io.netty:netty-common:4.1.46.Final
+[info]     | | |   | 
+[info]     | | |   +-io.netty:netty-common:4.1.46.Final
+[info]     | | |   +-io.netty:netty-resolver:4.1.46.Final
+[info]     | | |     +-io.netty:netty-common:4.1.46.Final
+[info]     | | |     
+[info]     | | +-io.netty:netty-common:4.1.46.Final
+[info]     | | +-io.netty:netty-handler:4.1.46.Final
+[info]     | | | +-io.netty:netty-buffer:4.1.46.Final
+[info]     | | | | +-io.netty:netty-common:4.1.46.Final
+[info]     | | | | 
+[info]     | | | +-io.netty:netty-codec:4.1.46.Final
+[info]     | | | | +-io.netty:netty-buffer:4.1.46.Final
+[info]     | | | | | +-io.netty:netty-common:4.1.46.Final
+[info]     | | | | | 
+[info]     | | | | +-io.netty:netty-common:4.1.46.Final
+[info]     | | | | +-io.netty:netty-transport:4.1.46.Final
+[info]     | | | |   +-io.netty:netty-buffer:4.1.46.Final
+[info]     | | | |   | +-io.netty:netty-common:4.1.46.Final
+[info]     | | | |   | 
+[info]     | | | |   +-io.netty:netty-common:4.1.46.Final
+[info]     | | | |   +-io.netty:netty-resolver:4.1.46.Final
+[info]     | | | |     +-io.netty:netty-common:4.1.46.Final
+[info]     | | | |     
+[info]     | | | +-io.netty:netty-common:4.1.46.Final
+[info]     | | | +-io.netty:netty-resolver:4.1.46.Final
+[info]     | | | | +-io.netty:netty-common:4.1.46.Final
+[info]     | | | | 
+[info]     | | | +-io.netty:netty-transport:4.1.46.Final
+[info]     | | |   +-io.netty:netty-buffer:4.1.46.Final
+[info]     | | |   | +-io.netty:netty-common:4.1.46.Final
+[info]     | | |   | 
+[info]     | | |   +-io.netty:netty-common:4.1.46.Final
+[info]     | | |   +-io.netty:netty-resolver:4.1.46.Final
+[info]     | | |     +-io.netty:netty-common:4.1.46.Final
+[info]     | | |     
+[info]     | | +-io.netty:netty-transport:4.1.46.Final
+[info]     | |   +-io.netty:netty-buffer:4.1.46.Final
+[info]     | |   | +-io.netty:netty-common:4.1.46.Final
+[info]     | |   | 
+[info]     | |   +-io.netty:netty-common:4.1.46.Final
+[info]     | |   +-io.netty:netty-resolver:4.1.46.Final
+[info]     | |     +-io.netty:netty-common:4.1.46.Final
+[info]     | |     
+[info]     | +-io.netty:netty-codec:4.1.46.Final
+[info]     | | +-io.netty:netty-buffer:4.1.46.Final
+[info]     | | | +-io.netty:netty-common:4.1.46.Final
+[info]     | | | 
+[info]     | | +-io.netty:netty-common:4.1.46.Final
+[info]     | | +-io.netty:netty-transport:4.1.46.Final
+[info]     | |   +-io.netty:netty-buffer:4.1.46.Final
+[info]     | |   | +-io.netty:netty-common:4.1.46.Final
+[info]     | |   | 
+[info]     | |   +-io.netty:netty-common:4.1.46.Final
+[info]     | |   +-io.netty:netty-resolver:4.1.46.Final
+[info]     | |     +-io.netty:netty-common:4.1.46.Final
+[info]     | |     
+[info]     | +-io.netty:netty-common:4.1.46.Final
+[info]     | +-io.netty:netty-handler:4.1.46.Final
+[info]     | | +-io.netty:netty-buffer:4.1.46.Final
+[info]     | | | +-io.netty:netty-common:4.1.46.Final
+[info]     | | | 
+[info]     | | +-io.netty:netty-codec:4.1.46.Final
+[info]     | | | +-io.netty:netty-buffer:4.1.46.Final
+[info]     | | | | +-io.netty:netty-common:4.1.46.Final
+[info]     | | | | 
+[info]     | | | +-io.netty:netty-common:4.1.46.Final
+[info]     | | | +-io.netty:netty-transport:4.1.46.Final
+[info]     | | |   +-io.netty:netty-buffer:4.1.46.Final
+[info]     | | |   | +-io.netty:netty-common:4.1.46.Final
+[info]     | | |   | 
+[info]     | | |   +-io.netty:netty-common:4.1.46.Final
+[info]     | | |   +-io.netty:netty-resolver:4.1.46.Final
+[info]     | | |     +-io.netty:netty-common:4.1.46.Final
+[info]     | | |     
+[info]     | | +-io.netty:netty-common:4.1.46.Final
+[info]     | | +-io.netty:netty-resolver:4.1.46.Final
+[info]     | | | +-io.netty:netty-common:4.1.46.Final
+[info]     | | | 
+[info]     | | +-io.netty:netty-transport:4.1.46.Final
+[info]     | |   +-io.netty:netty-buffer:4.1.46.Final
+[info]     | |   | +-io.netty:netty-common:4.1.46.Final
+[info]     | |   | 
+[info]     | |   +-io.netty:netty-common:4.1.46.Final
+[info]     | |   +-io.netty:netty-resolver:4.1.46.Final
+[info]     | |     +-io.netty:netty-common:4.1.46.Final
+[info]     | |     
+[info]     | +-io.netty:netty-transport-native-epoll:4.1.46.Final
+[info]     | | +-io.netty:netty-buffer:4.1.46.Final
+[info]     | | | +-io.netty:netty-common:4.1.46.Final
+[info]     | | | 
+[info]     | | +-io.netty:netty-common:4.1.46.Final
+[info]     | | +-io.netty:netty-transport-native-unix-common:4.1.46.Final
+[info]     | | | +-io.netty:netty-buffer:4.1.46.Final
+[info]     | | | | +-io.netty:netty-common:4.1.46.Final
+[info]     | | | | 
+[info]     | | | +-io.netty:netty-common:4.1.46.Final
+[info]     | | | +-io.netty:netty-transport:4.1.46.Final
+[info]     | | |   +-io.netty:netty-buffer:4.1.46.Final
+[info]     | | |   | +-io.netty:netty-common:4.1.46.Final
+[info]     | | |   | 
+[info]     | | |   +-io.netty:netty-common:4.1.46.Final
+[info]     | | |   +-io.netty:netty-resolver:4.1.46.Final
+[info]     | | |     +-io.netty:netty-common:4.1.46.Final
+[info]     | | |     
+[info]     | | +-io.netty:netty-transport:4.1.46.Final
+[info]     | |   +-io.netty:netty-buffer:4.1.46.Final
+[info]     | |   | +-io.netty:netty-common:4.1.46.Final
+[info]     | |   | 
+[info]     | |   +-io.netty:netty-common:4.1.46.Final
+[info]     | |   +-io.netty:netty-resolver:4.1.46.Final
+[info]     | |     +-io.netty:netty-common:4.1.46.Final
+[info]     | |     
+[info]     | +-io.netty:netty-transport:4.1.46.Final
+[info]     | | +-io.netty:netty-buffer:4.1.46.Final
+[info]     | | | +-io.netty:netty-common:4.1.46.Final
+[info]     | | | 
+[info]     | | +-io.netty:netty-common:4.1.46.Final
+[info]     | | +-io.netty:netty-resolver:4.1.46.Final
+[info]     | |   +-io.netty:netty-common:4.1.46.Final
+[info]     | |   
+[info]     | +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | +-org.slf4j:slf4j-api:1.7.28
+[info]     | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | +-software.amazon.awssdk:http-client-spi:2.15.14
+[info]     | | +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | +-software.amazon.awssdk:metrics-spi:2.15.14
+[info]     | | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | +-software.amazon.awssdk:utils:2.15.14
+[info]     | | |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | |   +-org.slf4j:slf4j-api:1.7.28
+[info]     | | |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | |   
+[info]     | | +-software.amazon.awssdk:utils:2.15.14
+[info]     | |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | |   +-org.slf4j:slf4j-api:1.7.28
+[info]     | |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     | |   
+[info]     | +-software.amazon.awssdk:metrics-spi:2.15.14
+[info]     | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | +-software.amazon.awssdk:utils:2.15.14
+[info]     | |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | |   +-org.slf4j:slf4j-api:1.7.28
+[info]     | |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     | |   
+[info]     | +-software.amazon.awssdk:utils:2.15.14
+[info]     |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     |   +-org.slf4j:slf4j-api:1.7.28
+[info]     |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     |   
+[info]     +-software.amazon.awssdk:profiles:2.15.14
+[info]     | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | +-software.amazon.awssdk:utils:2.15.14
+[info]     |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     |   +-org.slf4j:slf4j-api:1.7.28
+[info]     |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     |   
+[info]     +-software.amazon.awssdk:protocol-core:2.15.14
+[info]     | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | +-software.amazon.awssdk:http-client-spi:2.15.14
+[info]     | | +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | +-software.amazon.awssdk:metrics-spi:2.15.14
+[info]     | | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | +-software.amazon.awssdk:utils:2.15.14
+[info]     | | |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | |   +-org.slf4j:slf4j-api:1.7.28
+[info]     | | |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | |   
+[info]     | | +-software.amazon.awssdk:utils:2.15.14
+[info]     | |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | |   +-org.slf4j:slf4j-api:1.7.28
+[info]     | |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     | |   
+[info]     | +-software.amazon.awssdk:sdk-core:2.15.14
+[info]     | | +-com.fasterxml.jackson.core:jackson-core:2.10.4
+[info]     | | +-com.fasterxml.jackson.core:jackson-databind:2.10.4
+[info]     | | | +-com.fasterxml.jackson.core:jackson-annotations:2.10.4
+[info]     | | | +-com.fasterxml.jackson.core:jackson-core:2.10.4
+[info]     | | | 
+[info]     | | +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | +-org.slf4j:slf4j-api:1.7.28
+[info]     | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | +-software.amazon.awssdk:http-client-spi:2.15.14
+[info]     | | | +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | +-software.amazon.awssdk:metrics-spi:2.15.14
+[info]     | | | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | | +-software.amazon.awssdk:utils:2.15.14
+[info]     | | | |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | | |   +-org.slf4j:slf4j-api:1.7.28
+[info]     | | | |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | |   
+[info]     | | | +-software.amazon.awssdk:utils:2.15.14
+[info]     | | |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | |   +-org.slf4j:slf4j-api:1.7.28
+[info]     | | |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | |   
+[info]     | | +-software.amazon.awssdk:metrics-spi:2.15.14
+[info]     | | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | +-software.amazon.awssdk:utils:2.15.14
+[info]     | | |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | |   +-org.slf4j:slf4j-api:1.7.28
+[info]     | | |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | |   
+[info]     | | +-software.amazon.awssdk:profiles:2.15.14
+[info]     | | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | +-software.amazon.awssdk:utils:2.15.14
+[info]     | | |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | |   +-org.slf4j:slf4j-api:1.7.28
+[info]     | | |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | |   
+[info]     | | +-software.amazon.awssdk:utils:2.15.14
+[info]     | |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | |   +-org.slf4j:slf4j-api:1.7.28
+[info]     | |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     | |   
+[info]     | +-software.amazon.awssdk:utils:2.15.14
+[info]     |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     |   +-org.slf4j:slf4j-api:1.7.28
+[info]     |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     |   
+[info]     +-software.amazon.awssdk:regions:2.15.14
+[info]     | +-com.fasterxml.jackson.core:jackson-annotations:2.10.4
+[info]     | +-com.fasterxml.jackson.core:jackson-databind:2.10.4
+[info]     | | +-com.fasterxml.jackson.core:jackson-annotations:2.10.4
+[info]     | | +-com.fasterxml.jackson.core:jackson-core:2.10.4
+[info]     | | 
+[info]     | +-org.slf4j:slf4j-api:1.7.28
+[info]     | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | +-software.amazon.awssdk:profiles:2.15.14
+[info]     | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | +-software.amazon.awssdk:utils:2.15.14
+[info]     | |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | |   +-org.slf4j:slf4j-api:1.7.28
+[info]     | |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     | |   
+[info]     | +-software.amazon.awssdk:sdk-core:2.15.14
+[info]     | | +-com.fasterxml.jackson.core:jackson-core:2.10.4
+[info]     | | +-com.fasterxml.jackson.core:jackson-databind:2.10.4
+[info]     | | | +-com.fasterxml.jackson.core:jackson-annotations:2.10.4
+[info]     | | | +-com.fasterxml.jackson.core:jackson-core:2.10.4
+[info]     | | | 
+[info]     | | +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | +-org.slf4j:slf4j-api:1.7.28
+[info]     | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | +-software.amazon.awssdk:http-client-spi:2.15.14
+[info]     | | | +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | +-software.amazon.awssdk:metrics-spi:2.15.14
+[info]     | | | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | | +-software.amazon.awssdk:utils:2.15.14
+[info]     | | | |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | | |   +-org.slf4j:slf4j-api:1.7.28
+[info]     | | | |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | |   
+[info]     | | | +-software.amazon.awssdk:utils:2.15.14
+[info]     | | |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | |   +-org.slf4j:slf4j-api:1.7.28
+[info]     | | |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | |   
+[info]     | | +-software.amazon.awssdk:metrics-spi:2.15.14
+[info]     | | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | +-software.amazon.awssdk:utils:2.15.14
+[info]     | | |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | |   +-org.slf4j:slf4j-api:1.7.28
+[info]     | | |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | |   
+[info]     | | +-software.amazon.awssdk:profiles:2.15.14
+[info]     | | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | +-software.amazon.awssdk:utils:2.15.14
+[info]     | | |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | |   +-org.slf4j:slf4j-api:1.7.28
+[info]     | | |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | |   
+[info]     | | +-software.amazon.awssdk:utils:2.15.14
+[info]     | |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | |   +-org.slf4j:slf4j-api:1.7.28
+[info]     | |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     | |   
+[info]     | +-software.amazon.awssdk:utils:2.15.14
+[info]     |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     |   +-org.slf4j:slf4j-api:1.7.28
+[info]     |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     |   
+[info]     +-software.amazon.awssdk:sdk-core:2.15.14
+[info]     | +-com.fasterxml.jackson.core:jackson-core:2.10.4
+[info]     | +-com.fasterxml.jackson.core:jackson-databind:2.10.4
+[info]     | | +-com.fasterxml.jackson.core:jackson-annotations:2.10.4
+[info]     | | +-com.fasterxml.jackson.core:jackson-core:2.10.4
+[info]     | | 
+[info]     | +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | +-org.slf4j:slf4j-api:1.7.28
+[info]     | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | +-software.amazon.awssdk:http-client-spi:2.15.14
+[info]     | | +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | +-software.amazon.awssdk:metrics-spi:2.15.14
+[info]     | | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | | +-software.amazon.awssdk:utils:2.15.14
+[info]     | | |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | | |   +-org.slf4j:slf4j-api:1.7.28
+[info]     | | |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | |   
+[info]     | | +-software.amazon.awssdk:utils:2.15.14
+[info]     | |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | |   +-org.slf4j:slf4j-api:1.7.28
+[info]     | |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     | |   
+[info]     | +-software.amazon.awssdk:metrics-spi:2.15.14
+[info]     | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | +-software.amazon.awssdk:utils:2.15.14
+[info]     | |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | |   +-org.slf4j:slf4j-api:1.7.28
+[info]     | |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     | |   
+[info]     | +-software.amazon.awssdk:profiles:2.15.14
+[info]     | | +-software.amazon.awssdk:annotations:2.15.14
+[info]     | | +-software.amazon.awssdk:utils:2.15.14
+[info]     | |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     | |   +-org.slf4j:slf4j-api:1.7.28
+[info]     | |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     | |   
+[info]     | +-software.amazon.awssdk:utils:2.15.14
+[info]     |   +-org.reactivestreams:reactive-streams:1.0.2
+[info]     |   +-org.slf4j:slf4j-api:1.7.28
+[info]     |   +-software.amazon.awssdk:annotations:2.15.14
+[info]     |   
+[info]     +-software.amazon.awssdk:utils:2.15.14
+[info]       +-org.reactivestreams:reactive-streams:1.0.2
+[info]       +-org.slf4j:slf4j-api:1.7.28
+[info]       +-software.amazon.awssdk:annotations:2.15.14
+[info]       
+[success] Total time: 4 s, completed 15 Aug 2023, 14:02:40

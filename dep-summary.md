@@ -123,3 +123,29 @@ hvdomain:hv-domain_2.13:0.1.0-SNAPSHOT [S]
   +-io.netty:netty-buffer:4.1.46.Final
     +-io.netty:netty-common:4.1.46.Final
 ```
+
+## Commit ???
+
+Fails with
+
+```
+...
+Caused by: java.lang.ClassNotFoundException: io.netty.internal.tcnative.CertificateCompressionAlgo
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:581)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:178)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+	... 47 more
+```
+
+Versions
+
+```
+val awssdk2 = "2.20.125"
+val netty = "4.1.91.Final"
+val twitter = "20.9.0"
+val finch = "0.33.0"
+```
+
+Deps
+
+

@@ -7,12 +7,12 @@ import sbt._
 lazy val Versions = new {
   val awssdk = "1.11.728" // matches kinesis adaptor
   //    val awssdk = "1.12.528"
-  val awssdk2 = "2.15.14" // 2.14.x series lacks waiter classes
-//  val awssdk2 = "2.20.125" // 2.14.x series lacks waiter classes
-  val finch          = "0.32.1"
+//  val awssdk2 = "2.15.14" // 2.14.x series lacks waiter classes
+  val awssdk2 = "2.20.125" // 2.14.x series lacks waiter classes
+  val finch          = "0.33.0"
   val kinesisAdaptor = "1.5.1"
-//  val netty          = "4.1.91.Final"
-  val netty          = "4.1.46.Final"
+  val netty          = "4.1.91.Final"
+//  val netty          = "4.1.46.Final"
   //    val netty = "4.1.53.Final"
   val nettyRouter = "2.2.0"
   val twitter     = "20.9.0"
@@ -61,7 +61,11 @@ lazy val hvDomain = (project in file("libs/hv-domain"))
       "software.amazon.awssdk" % "kinesis"      % Versions.awssdk2,
       "com.twitter"           %% "util-core"    % Versions.twitter,
       "com.lihaoyi"           %% "upickle"      % "1.6.0",
-      "io.netty"               % "netty-buffer" % Versions.netty
+      "io.netty"               % "netty-buffer" % Versions.netty,
+
+      // "0.32.1" causes deduplicate errors in the build
+      // "0.33.0" builds
+      "com.github.finagle" %% "finchx-circe"     % Versions.finch
     )
   )
 
