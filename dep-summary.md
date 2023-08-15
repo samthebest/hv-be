@@ -102,3 +102,24 @@ val netty = "4.1.46.Final"
 val twitter = "20.9.0"
 ```
 
+Deps
+
+```
+hvdomain:hv-domain_2.13:0.1.0-SNAPSHOT [S]
+  +-software.amazon.awssdk:kinesis:2.15.14
+    +-software.amazon.awssdk:netty-nio-client:2.15.14
+      +-io.netty:netty-transport-native-epoll:4.1.46.Final
+        +-io.netty:netty-transport-native-unix-common:4.1.46.Final
+      +-io.netty:netty-codec-http2:4.1.46.Final
+      +-com.typesafe.netty:netty-reactive-streams-http:2.0.4
+        +-io.netty:netty-codec-http:4.1.46.Final
+        +-io.netty:netty-codec-http:4.1.43.Final (evicted by: 4.1.46.Final)
+        +-com.typesafe.netty:netty-reactive-streams:2.0.4
+          +-io.netty:netty-handler:4.1.46.Final
+            +-io.netty:netty-codec:4.1.46.Final
+              +-io.netty:netty-transport:4.1.46.Final
+                +-io.netty:netty-resolver:4.1.46.Final
+          +-io.netty:netty-handler:4.1.43.Final (evicted by: 4.1.46.Final)
+  +-io.netty:netty-buffer:4.1.46.Final
+    +-io.netty:netty-common:4.1.46.Final
+```
