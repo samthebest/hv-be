@@ -205,3 +205,82 @@ hvdomain:hv-domain_2.13:0.1.0-SNAPSHOT [S]
 ```
 
 
+## Commit 20703bfcf7e6a379665c408d222a7706931d557a
+
+Works
+
+Versions
+
+```
+val awssdk2 = "2.16.104"
+val netty = "4.1.73.Final"
+val twitter = "20.9.0"
+val finch = "0.33.0"
+```
+
+Seems to pull in `4.1.73.Final` and `io.netty:netty-tcnative-boringssl-static:2.0.46.Final`
+
+Deps
+
+```
+scala> findNetty("deps-20703bfcf7e6a379665c408d222a7706931d557a.txt")
+hvdomain:hv-domain_2.13:0.1.0-SNAPSHOT [S]
+  +-com.github.finagle:finchx-circe_2.13:0.33.0 [S]
+    +-com.github.finagle:finchx-core_2.13:0.33.0 [S]
+      +-com.twitter:finagle-http_2.13:22.3.0 [S]
+        +-com.twitter:finagle-http2_2.13:22.3.0 [S]
+          +-io.netty:netty-tcnative-boringssl-static:2.0.46.Final
+          +-io.netty:netty-codec-http2:4.1.73.Final
+          +-com.twitter:finagle-netty4-http_2.13:22.3.0 [S]
+            +-com.twitter:finagle-netty4_2.13:22.3.0 [S]
+        +-com.twitter:finagle-base-http_2.13:22.3.0 [S]
+          +-io.netty:netty-transport-native-epoll:4.1.73.Final
+            +-io.netty:netty-transport-classes-epoll:4.1.73.Final
+              +-io.netty:netty-transport-native-unix-common:4.1.73.Final
+          +-io.netty:netty-handler-proxy:4.1.73.Final
+            +-io.netty:netty-codec-socks:4.1.73.Final
+          +-io.netty:netty-codec-http:4.1.73.Final
+            +-io.netty:netty-handler:4.1.73.Final
+              +-io.netty:netty-tcnative-classes:2.0.46.Final
+            +-io.netty:netty-codec:4.1.73.Final
+              +-io.netty:netty-transport:4.1.73.Final
+                +-io.netty:netty-resolver:4.1.73.Final
+            +-io.netty:netty-buffer:4.1.73.Final
+              +-io.netty:netty-common:4.1.73.Final
+  +-io.netty:netty-buffer:4.1.73.Final
+    +-io.netty:netty-common:4.1.73.Final
+  +-software.amazon.awssdk:kinesis:2.16.104
+    +-software.amazon.awssdk:netty-nio-client:2.16.104
+      +-io.netty:netty-transport-native-epoll:4.1.73.Final
+        +-io.netty:netty-transport-classes-epoll:4.1.73.Final
+      +-io.netty:netty-transport-native-epoll:4.1.63.Final (evicted by: 4.1.73.Final)
+        +-io.netty:netty-transport-native-unix-common:4.1.73.Final
+        +-io.netty:netty-transport-native-unix-common:4.1.63.Final (evicted by: 4.1.73.Final)
+      +-io.netty:netty-codec-http2:4.1.73.Final
+      +-io.netty:netty-codec-http2:4.1.63.Final (evicted by: 4.1.73.Final)
+      +-com.typesafe.netty:netty-reactive-streams-http:2.0.5
+        +-io.netty:netty-codec-http:4.1.73.Final
+        +-io.netty:netty-codec-http:4.1.63.Final (evicted by: 4.1.73.Final)
+        +-io.netty:netty-codec-http:4.1.52.Final (evicted by: 4.1.73.Final)
+        +-com.typesafe.netty:netty-reactive-streams:2.0.5
+          +-io.netty:netty-handler:4.1.73.Final
+            +-io.netty:netty-tcnative-classes:2.0.46.Final
+          +-io.netty:netty-handler:4.1.63.Final (evicted by: 4.1.73.Final)
+            +-io.netty:netty-codec:4.1.73.Final
+            +-io.netty:netty-codec:4.1.63.Final (evicted by: 4.1.73.Final)
+              +-io.netty:netty-transport:4.1.73.Final
+              +-io.netty:netty-transport:4.1.63.Final (evicted by: 4.1.73.Final)
+                +-io.netty:netty-resolver:4.1.73.Final
+                +-io.netty:netty-resolver:4.1.63.Final (evicted by: 4.1.73.Final)
+              +-io.netty:netty-common:4.1.63.Final (evicted by: 4.1.73.Final)
+            +-io.netty:netty-buffer:4.1.73.Final
+              +-io.netty:netty-common:4.1.73.Final
+            +-io.netty:netty-buffer:4.1.63.Final (evicted by: 4.1.73.Final)
+          +-io.netty:netty-handler:4.1.52.Final (evicted by: 4.1.73.Final)
+```
+
+
+To try next:
+
+ - netty-router
+ - twitter-server
