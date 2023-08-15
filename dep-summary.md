@@ -89,3 +89,16 @@ hvdomain:hv-domain_2.13:0.1.0-SNAPSHOT [S]
   +-io.netty:netty-buffer:4.1.91.Final
     +-io.netty:netty-common:4.1.91.Final
 ```
+
+## Commit 2ae957d571ff842d790b656914ca7a8b4fc910f1
+
+Works
+
+Versions:
+
+```
+val awssdk2 = "2.15.14"
+val netty = "4.1.46.Final"
+val twitter = "20.9.0"
+```
+

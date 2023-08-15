@@ -11,7 +11,8 @@ lazy val Versions = new {
 //  val awssdk2 = "2.20.125" // 2.14.x series lacks waiter classes
   val finch          = "0.32.1"
   val kinesisAdaptor = "1.5.1"
-  val netty          = "4.1.91.Final"
+//  val netty          = "4.1.91.Final"
+  val netty          = "4.1.46.Final"
   //    val netty = "4.1.53.Final"
   val nettyRouter = "2.2.0"
   val twitter     = "20.9.0"
@@ -46,15 +47,15 @@ lazy val hvDomain = (project in file("libs/hv-domain"))
     defaultSettings,
     sharedSettings,
     CustomMergeStrat.mergeStrat,
-    assemblyShadeRules in assembly ++= Seq(
-//      ShadeRule.rename("io.netty.**" -> "aws_version_of_netty.@1")
-//        .inLibrary("com.amazonaws" % "aws-java-sdk-kinesis" % Versions.awssdk),
-
-      // Doesn't work
-      ShadeRule.rename("io.netty.**" -> "aws2_version_of_netty.@1")
-        .inLibrary("software.amazon.awssdk" % "kinesis" % Versions.awssdk2)
-//        .inProject
-    ),
+//    assemblyShadeRules in assembly ++= Seq(
+////      ShadeRule.rename("io.netty.**" -> "aws_version_of_netty.@1")
+////        .inLibrary("com.amazonaws" % "aws-java-sdk-kinesis" % Versions.awssdk),
+//
+//      // Doesn't work
+//      ShadeRule.rename("io.netty.**" -> "aws2_version_of_netty.@1")
+//        .inLibrary("software.amazon.awssdk" % "kinesis" % Versions.awssdk2)
+////        .inProject
+//    ),
     moduleName := "hv-domain",
     libraryDependencies ++= Seq(
       "software.amazon.awssdk" % "kinesis"      % Versions.awssdk2,
