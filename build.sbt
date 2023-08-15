@@ -7,11 +7,15 @@ import sbt._
 lazy val Versions = new {
   val awssdk = "1.11.728" // matches kinesis adaptor
   //    val awssdk = "1.12.528"
-//  val awssdk2 = "2.15.14" // 2.14.x series lacks waiter classes
-  val awssdk2 = "2.20.125" // 2.14.x series lacks waiter classes
-  val finch          = "0.33.0"
+//  val awssdk2 = "2.15.14"
+//  val awssdk2 = "2.20.125" // works with 4.1.91.Final
+//  val awssdk2 = "2.17.295" // Pulls in 4.1.77.Final
+  val awssdk2 = "2.16.104" // Pulls in 4.1.73.Final and WORKS
+  val finch          = "0.33.0" // max version, pulls in 4.1.73.Final
   val kinesisAdaptor = "1.5.1"
-  val netty          = "4.1.91.Final"
+//  val netty          = "4.1.91.Final"
+  // Max version for finch
+  val netty          = "4.1.73.Final"
 //  val netty          = "4.1.46.Final"
   //    val netty = "4.1.53.Final"
   val nettyRouter = "2.2.0"
