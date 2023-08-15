@@ -7,8 +7,8 @@ import sbt._
 lazy val Versions = new {
   val awssdk = "1.11.728" // matches kinesis adaptor
   //    val awssdk = "1.12.528"
-//  val awssdk2 = "2.15.14" // 2.14.x series lacks waiter classes
-  val awssdk2 = "2.20.125" // 2.14.x series lacks waiter classes
+  val awssdk2 = "2.15.14" // 2.14.x series lacks waiter classes
+//  val awssdk2 = "2.20.125" // 2.14.x series lacks waiter classes
   val finch = "0.32.1"
   val kinesisAdaptor = "1.5.1"
   val netty = "4.1.91.Final"
