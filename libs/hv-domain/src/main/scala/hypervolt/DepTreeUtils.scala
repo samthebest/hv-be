@@ -5,7 +5,7 @@ import scala.io.Source
 object DepTreeUtils {
   def findNetty(p: String): Unit =
     findAncestories(p, "netty")
-      .map(deduplicateProgeny)
+      .map(n => Node(n.value, n.children.map(deduplicateProgeny)))
       .map(_.pretty)
       .foreach(System.err.println)
 

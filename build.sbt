@@ -23,7 +23,6 @@ lazy val scala213 = "2.13.8"
 ThisBuild / scalaVersion := scala213
 
 lazy val sharedSettings: Seq[Def.Setting[_]] = Seq(
-  Compile / packageDoc / publishArtifact := false,
   asciiGraphWidth := 1000000,
   javacOptions ++= Seq("-source", "11", "-target", "11")
 )
@@ -64,7 +63,7 @@ lazy val hvDomain = (project in file("libs/hv-domain"))
       "io.netty"               % "netty-buffer" % Versions.netty,
 
       // "0.32.1" causes deduplicate errors in the build
-      // "0.33.0" builds
+      // "0.33.0" builds but throws exception
       "com.github.finagle" %% "finchx-circe"     % Versions.finch
     )
   )
