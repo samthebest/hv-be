@@ -3,8 +3,14 @@
 
 Using `DepTreeUtils.scala` this file shows only which libs bring in which netty libs (without duplication)
 
-We say a commit works provided `TestKinesisPut.main` works and 
-doesn't throw a weird netty exception (like `ClassNotFoundException`, or `ClosedChannelException`)
+We say a commit works provided the following works
+
+```
+sbt "project hvDomain" assembly
+java -cp libs/hv-domain/target/scala-2.13/hvDomain-assembly-0.1.0-SNAPSHOT.jar hypervolt.TestKinesisPut
+```
+
+and doesn't throw a weird netty exception (like `ClassNotFoundException`, or `ClosedChannelException`)
 
 ## Commit 08c7233bf2a3418e1334311969f8f54ad8cfb843
 
