@@ -2,9 +2,10 @@ package hypervolt
 
 import scala.io.Source
 
+// hypervolt.DepTreeUtils.findNetty("deps-9b0d2f9b22c02fe9ad0fda85f6a3ad97358b261f.txt")
 object DepTreeUtils {
-  def findNetty(p: String): Unit =
-    findAncestories(p, "netty")
+  def find(p: String, s: String): Unit =
+    findAncestories(p, s)
       .map(n => Node(n.value, n.children.map(deduplicateProgeny)))
       .map(_.pretty)
       .foreach(System.err.println)

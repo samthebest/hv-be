@@ -279,8 +279,76 @@ hvdomain:hv-domain_2.13:0.1.0-SNAPSHOT [S]
           +-io.netty:netty-handler:4.1.52.Final (evicted by: 4.1.73.Final)
 ```
 
+## Commit 9b0d2f9b22c02fe9ad0fda85f6a3ad97358b261f
 
-To try next:
+TestChannel fails
 
- - netty-router
- - twitter-server
+Versions
+
+```
+val awssdk2 = "2.16.104"
+val netty = "4.1.73.Final"
+val twitter = "20.9.0"
+val finch = "0.33.0"
+// "com.twitter" %% "finagle-stats" % Versions.twitter,
+```
+
+Netty deps look OK, must have something to do with twitter
+
+
+```
+scala> hypervolt.DepTreeUtils.find("deps-9b0d2f9b22c02fe9ad0fda85f6a3ad97358b261f.txt", "util-core")
+hvdomain:hv-domain_2.13:0.1.0-SNAPSHOT [S]
+  +-com.github.finagle:finchx-circe_2.13:0.33.0 [S]
+    +-com.github.finagle:finchx-core_2.13:0.33.0 [S]
+      +-com.twitter:finagle-http_2.13:22.3.0 [S]
+        +-com.twitter:finagle-http2_2.13:22.3.0 [S]
+          +-com.twitter:finagle-netty4-http_2.13:22.3.0 [S]
+            +-com.twitter:finagle-netty4_2.13:22.3.0 [S]
+        +-com.twitter:finagle-base-http_2.13:22.3.0 [S]
+          +-com.twitter:finagle-core_2.13:22.3.0 [S]
+            +-com.twitter:util-tunable_2.13:22.3.0 [S]
+            +-com.twitter:util-security_2.13:22.3.0 [S]
+            +-com.twitter:util-routing_2.13:22.3.0 [S]
+            +-com.twitter:util-jvm_2.13:22.3.0 [S]
+            +-com.twitter:util-codec_2.13:22.3.0 [S]
+            +-com.twitter:util-cache_2.13:22.3.0 [S]
+            +-com.twitter:finagle-toggle_2.13:22.3.0 [S]
+              +-com.twitter:util-logging_2.13:22.3.0 [S]
+                +-com.twitter:util-stats_2.13:22.3.0 [S]
+                  +-com.twitter:util-lint_2.13:22.3.0 [S]
+              +-com.twitter:util-app_2.13:22.3.0 [S]
+                +-com.twitter:util-registry_2.13:22.3.0 [S]
+                +-com.twitter:util-app-lifecycle_2.13:22.3.0 [S]
+                  +-com.twitter:util-core_2.13:22.3.0 [S]
+  +-com.twitter:finagle-stats_2.13:20.9.0 [S]
+    +-com.twitter:finagle-stats-core_2.13:20.9.0 [S]
+      +-com.twitter:finagle-tunable_2.13:20.9.0 [S]
+        +-com.twitter:util-core_2.13:20.9.0 [S] (evicted by: 22.3.0)
+      +-com.twitter:finagle-http_2.13:22.3.0 [S]
+        +-com.twitter:finagle-http2_2.13:22.3.0 [S]
+          +-com.twitter:finagle-netty4-http_2.13:22.3.0 [S]
+            +-com.twitter:finagle-netty4_2.13:22.3.0 [S]
+        +-com.twitter:finagle-base-http_2.13:22.3.0 [S]
+      +-com.twitter:finagle-core_2.13:22.3.0 [S]
+        +-com.twitter:util-tunable_2.13:22.3.0 [S]
+        +-com.twitter:util-security_2.13:22.3.0 [S]
+        +-com.twitter:util-routing_2.13:22.3.0 [S]
+        +-com.twitter:util-jvm_2.13:22.3.0 [S]
+        +-com.twitter:util-codec_2.13:22.3.0 [S]
+        +-com.twitter:util-cache_2.13:22.3.0 [S]
+        +-com.twitter:finagle-toggle_2.13:22.3.0 [S]
+          +-com.twitter:util-logging_2.13:22.3.0 [S]
+            +-com.twitter:util-stats_2.13:22.3.0 [S]
+              +-com.twitter:util-lint_2.13:22.3.0 [S]
+          +-com.twitter:util-app_2.13:22.3.0 [S]
+            +-com.twitter:util-registry_2.13:22.3.0 [S]
+            +-com.twitter:util-app-lifecycle_2.13:22.3.0 [S]
+              +-com.twitter:util-core_2.13:22.3.0 [S]
+  +-com.twitter:util-core_2.13:20.9.0 [S] (evicted by: 22.3.0)
+  +-com.twitter:util-core_2.13:22.3.0 [S]
+```
+
+
+
+
