@@ -151,18 +151,19 @@ lazy val hvDomain = (project in file("libs/hv-domain"))
 //      "io.circe" %% "circe-generic" % Versions.circe,
 
       // collector
-//      "ch.qos.logback" % "logback-classic" % Versions.logback,
-//      "com.amazonaws" % "dynamodb-streams-kinesis-adapter" % Versions.kinesisAdaptor,
-//      "com.github.finagle" %% "finchx-core" % Versions.finch,
-//      "com.github.finagle" %% "finchx-circe" % Versions.finch,
-//      "com.github.yakivy" %% "jam-core" % Versions.jam,
-//      "com.twitter" %% "algebird-core" % Versions.algebird,
-//      "com.twitter" %% "finagle-http" % Versions.twitter,
-//      "com.twitter" %% "finagle-stats" % Versions.twitter,
-//      "com.twitter" %% "twitter-server" % Versions.twitter,
-//      "com.typesafe" % "config" % Versions.config,
+      "ch.qos.logback" % "logback-classic" % Versions.logback,
+      "com.amazonaws" % "dynamodb-streams-kinesis-adapter" % Versions.kinesisAdaptor,
+      "com.github.finagle" %% "finchx-core" % Versions.finch,
+      "com.github.finagle" %% "finchx-circe" % Versions.finch,
+      "com.github.yakivy" %% "jam-core" % Versions.jam,
+      "com.twitter" %% "algebird-core" % Versions.algebird,
+      "com.twitter" %% "finagle-http" % Versions.twitter,
+      "com.twitter" %% "finagle-stats" % Versions.twitter,
+      "com.twitter" %% "twitter-server" % Versions.twitter,
+      "com.typesafe" % "config" % Versions.config,
 
-      "io.dropwizard.metrics" % "metrics-core" % Versions.dropwizard,
+      // All these OK
+//      "io.dropwizard.metrics" % "metrics-core" % Versions.dropwizard, // this is OK
 //      "io.netty" % "netty-handler" % Versions.netty,
 //      "io.netty" % "netty-transport-native-epoll" % Versions.netty,
 //      "software.amazon.awssdk" % "cloudwatch" % Versions.awssdk2,
