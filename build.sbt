@@ -103,52 +103,52 @@ lazy val hvDomain = (project in file("libs/hv-domain"))
       "com.github.finagle" %% "finchx-circe"     % Versions.finch,
 
 
-      // Most deps from device-front-end
-//      "ch.qos.logback" % "logback-classic" % Versions.logback,
-      "com.amazonaws" % "dynamodb-streams-kinesis-adapter" % Versions.kinesisAdaptor,
-//      "com.github.ben-manes.caffeine" % "caffeine" % Versions.caffeine,
-      "com.github.finagle" %% "finchx-core" % Versions.finch,
-      "com.github.finagle" %% "finchx-circe" % Versions.finch,
-      "com.github.finagle" %% "finchx-fs2" % Versions.finch,
-      "com.twitter" %% "twitter-server" % Versions.twitter,
-//      "com.typesafe" % "config" % Versions.config,
-      "software.amazon.awssdk" % "ses" % Versions.awssdk2,
-      "io.netty" % "netty-handler" % Versions.netty,
-      "io.netty" % "netty-transport-native-epoll" % Versions.netty,
-      "io.netty" % "netty-codec-mqtt" % Versions.netty,
-      "tv.cntt" % "netty-router" % Versions.nettyRouter,
-//      "com.google.api-client" % "google-api-client" % Versions.googleAPIVersion,
-//      "org.bouncycastle" % "bcprov-jdk15on" % Versions.bouncyCastle,
-      // Worked up to here
-      "org.typelevel" %% "cats-effect" % "2.3.3",
-//      "com.softwaremill.sttp.client3" %% "core" % "3.8.15" % "it, test",
-      "com.softwaremill.sttp.client3" %% "core" % "3.8.15" % "test",
-//      "org.scalatest" %% "scalatest" % Versions.scalatest % "it,test",
-      "org.scalatestplus" %% "mockito-4-11" % "3.2.16.0" % Test,
-
-
-      // auth0
-//      "org.bouncycastle" % "bcprov-jdk15on" % Versions.bouncyCastle,
-//      "com.auth0" % "jwks-rsa" % Versions.auth0JwksRsa exclude("com.fasterxml.jackson.core", "jackson-databind"),
-//      "com.auth0" % "java-jwt" % Versions.auth0JavaJwt exclude("com.fasterxml.jackson.core", "jackson-databind"),
+//      // Most deps from device-front-end
+////      "ch.qos.logback" % "logback-classic" % Versions.logback,
+//      "com.amazonaws" % "dynamodb-streams-kinesis-adapter" % Versions.kinesisAdaptor,
+////      "com.github.ben-manes.caffeine" % "caffeine" % Versions.caffeine,
+//      "com.github.finagle" %% "finchx-core" % Versions.finch,
+//      "com.github.finagle" %% "finchx-circe" % Versions.finch,
+//      "com.github.finagle" %% "finchx-fs2" % Versions.finch,
+//      "com.twitter" %% "twitter-server" % Versions.twitter,
+////      "com.typesafe" % "config" % Versions.config,
+//      "software.amazon.awssdk" % "ses" % Versions.awssdk2,
+//      "io.netty" % "netty-handler" % Versions.netty,
+//      "io.netty" % "netty-transport-native-epoll" % Versions.netty,
+//      "io.netty" % "netty-codec-mqtt" % Versions.netty,
+//      "tv.cntt" % "netty-router" % Versions.nettyRouter,
+////      "com.google.api-client" % "google-api-client" % Versions.googleAPIVersion,
+////      "org.bouncycastle" % "bcprov-jdk15on" % Versions.bouncyCastle,
+//      // Worked up to here
+//      "org.typelevel" %% "cats-effect" % "2.3.3",
+////      "com.softwaremill.sttp.client3" %% "core" % "3.8.15" % "it, test",
+//      "com.softwaremill.sttp.client3" %% "core" % "3.8.15" % "test",
+////      "org.scalatest" %% "scalatest" % Versions.scalatest % "it,test",
+//      "org.scalatestplus" %% "mockito-4-11" % "3.2.16.0" % Test,
+//
+//
+//      // auth0
+////      "org.bouncycastle" % "bcprov-jdk15on" % Versions.bouncyCastle,
+////      "com.auth0" % "jwks-rsa" % Versions.auth0JwksRsa exclude("com.fasterxml.jackson.core", "jackson-databind"),
+////      "com.auth0" % "java-jwt" % Versions.auth0JavaJwt exclude("com.fasterxml.jackson.core", "jackson-databind"),
+////      "io.circe" %% "circe-generic" % Versions.circe,
+////      "com.outworkers" %% "util-samplers" % Versions.util % Test,
+//
+//
+//      // Adoption
+//      "org.scanamo" %% "scanamo" % Versions.scanamo,
 //      "io.circe" %% "circe-generic" % Versions.circe,
 //      "com.outworkers" %% "util-samplers" % Versions.util % Test,
-
-
-      // Adoption
-      "org.scanamo" %% "scanamo" % Versions.scanamo,
-      "io.circe" %% "circe-generic" % Versions.circe,
-      "com.outworkers" %% "util-samplers" % Versions.util % Test,
-
-      // Worked up to here
-      // charger
-      "org.scanamo" %% "scanamo" % Versions.scanamo,
-      "io.circe" %% "circe-generic" % Versions.circe,
-      "com.outworkers" %% "util-samplers" % Versions.util % Test,
-
-      // chargerState
-      "org.scanamo" %% "scanamo" % Versions.scanamo,
-      "io.circe" %% "circe-generic" % Versions.circe,
+//
+//      // Worked up to here
+//      // charger
+//      "org.scanamo" %% "scanamo" % Versions.scanamo,
+//      "io.circe" %% "circe-generic" % Versions.circe,
+//      "com.outworkers" %% "util-samplers" % Versions.util % Test,
+//
+//      // chargerState
+//      "org.scanamo" %% "scanamo" % Versions.scanamo,
+//      "io.circe" %% "circe-generic" % Versions.circe,
 
       // collector
       "ch.qos.logback" % "logback-classic" % Versions.logback,
