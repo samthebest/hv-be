@@ -59,7 +59,7 @@ object DepTreeUtils {
         .fromFile(p)
         .getLines()
         .map(_.stripPrefix("[info] "))
-        .dropWhile(!_.startsWith("hvdomain"))
+        .dropWhile(x => !(x.startsWith("hvdomain") || x.startsWith("com.hypervolt")))
         .toList
 
     mkNode(asList.head, asList.tail.map(_.stripPrefix("  ")))
